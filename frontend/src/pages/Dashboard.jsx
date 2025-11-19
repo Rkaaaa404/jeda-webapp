@@ -5,13 +5,14 @@ import { dashboardAPI, taskAPI, sessionAPI } from '../utils/api';
 import TimerDisplay from '../components/TimerDisplay';
 import TaskItem from '../components/TaskItem';
 import EvidenceModal from '../components/EvidenceModal';
+import BreakTimer from '../components/BreakTimer';
 
-const Dashboard = () => {
+const Dashboard = ({ setActiveSession: setAppActiveSession, activeSession: appActiveSession }) => {
   const { user, updateUserStats } = useAuth();
   const [dashboardData, setDashboardData] = useState(null);
   const [tasks, setTasks] = useState([]);
   const [selectedTask, setSelectedTask] = useState(null);
-  const [activeSession, setActiveSession] = useState(null);
+  const [activeSession, setActiveSession] = useState(appActiveSession);
   const [showEvidenceModal, setShowEvidenceModal] = useState(false);
   const [taskToComplete, setTaskToComplete] = useState(null);
   const [newTaskTitle, setNewTaskTitle] = useState('');
@@ -20,6 +21,9 @@ const Dashboard = () => {
   const [editingTask, setEditingTask] = useState(null);
   const [editTitle, setEditTitle] = useState('');
   const [editSessions, setEditSessions] = useState(1);
+  const [onBreak, setOnBreak] = useState(false);
+  const [breakType, setBreakType] = useState('short'); // 'short' or 'long'
+  const [completedPomodoros, setCompletedPomodoros] = useState(0);
 
   useEffect(() => {
     loadDashboard();
@@ -61,7 +65,9 @@ const Dashboard = () => {
   const handleStartSession = async (taskId) => {
     try {
       const response = await sessionAPI.startSession({ taskId });
-      setActiveSession(response.data.data);
+      const session = response.data.data;
+      setActiveSession(session);
+      setAppActiveSession(session);
       await loadTasks();
     } catch (error) {
       console.error('Failed to start session:', error);
@@ -145,9 +151,16 @@ const Dashboard = () => {
     try {
       const response = await sessionAPI.stopSession();
       setActiveSession(null);
+      setAppActiveSession(null);
       updateUserStats(response.data.data.stats);
       await loadTasks();
       await loadDashboard();
+      
+      // Start break after completing a pomodoro
+      setCompletedPomodoros(prev => prev + 1);
+      const nextBreakType = (completedPomodoros + 1) % 4 === 0 ? 'long' : 'short';
+      setBreakType(nextBreakType);
+      setOnBreak(true);
     } catch (error) {
       console.error('Failed to stop session:', error);
       // Check if it's a minimum duration error
@@ -172,16 +185,23 @@ const Dashboard = () => {
     }
   };
 
+  const handleBreakEnd = () => {
+    setOnBreak(false);
+  };
+
+  const handleSkipBreak = () => {
+    setOnBreak(false);
+  };
+
   const todoTasks = tasks.filter(t => t.status === 'TODO' || t.status === 'IN_PROGRESS');
   const doneTasks = tasks.filter(t => t.status === 'DONE');
 
   return (
-    <div className="min-h-screen bg-slate-950 text-white">
+    <div className="p-6">
       {/* Top Bar */}
-      <div className="bg-slate-900 border-b border-slate-800 px-6 py-4">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
+      <div className="flex justify-between items-center mb-8">
           <div>
-            <h1 className="text-xl font-bold">Welcome back, {user?.username}!</h1>
+            <h1 className="text-xl font-bold text-white">Welcome back, {user?.username}!</h1>
             <p className="text-sm text-slate-400">
               Today's Progress: {dashboardData?.todayProgress.sessionsCompleted || 0} / {dashboardData?.todayProgress.dailyGoal || 4} sessions
             </p>
@@ -189,15 +209,13 @@ const Dashboard = () => {
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-2 bg-slate-800 px-4 py-2 rounded-lg">
               {getStreakIcon()}
-              <span className="font-semibold">{user?.stats.currentStreak || 0} Day Streak</span>
+              <span className="font-semibold text-white">{user?.stats.currentStreak || 0} Day Streak</span>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Main Content */}
-      <div className="max-w-7xl mx-auto p-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        {/* Main Content - Timer and Tasks */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
           {/* Left: Timer */}
           <div className="bg-slate-900 rounded-xl p-6 border border-slate-800">
             <TimerDisplay
@@ -212,7 +230,7 @@ const Dashboard = () => {
           {/* Right: Tasks */}
           <div className="bg-slate-900 rounded-xl p-6 border border-slate-800">
             <div className="flex items-center justify-between mb-4">
-              <h2 className="text-xl font-bold">Tasks</h2>
+              <h2 className="text-xl font-bold text-white">Tasks</h2>
               <button
                 onClick={() => setShowNewTaskForm(!showNewTaskForm)}
                 className="flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 px-4 py-2 rounded-lg transition-colors"
@@ -291,10 +309,102 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Evidence Modal */}
-      {showEvidenceModal && taskToComplete && (
+        {/* Statistics Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-6">
+          {/* Current Streak */}
+          <div className="bg-slate-900 rounded-xl p-4 border border-slate-800">
+            <div className="text-sm text-slate-400 mb-1">Current Streak:</div>
+            <div className="flex items-center gap-2">
+              {getStreakIcon()}
+              <span className="text-3xl font-bold text-white">{user?.stats.currentStreak || 0}</span>
+            </div>
+          </div>
+
+          {/* Longest Streak */}
+          <div className="bg-slate-900 rounded-xl p-4 border border-slate-800">
+            <div className="text-sm text-slate-400 mb-1">Longest Streak:</div>
+            <div className="text-3xl font-bold text-white">{user?.stats.longestStreak || 0}</div>
+          </div>
+
+          {/* Daily Goal */}
+          <div className="bg-slate-900 rounded-xl p-4 border border-slate-800">
+            <div className="text-sm text-slate-400 mb-1">Daily Goal</div>
+            <div className="text-3xl font-bold text-white">
+              {dashboardData?.todayProgress.sessionsCompleted || 0}/{dashboardData?.todayProgress.dailyGoal || 3}
+            </div>
+            <div className="text-xs text-emerald-400 mt-1">
+              {dashboardData?.todayProgress.sessionsCompleted === 0 
+                ? "🚀 Let's start the first session!" 
+                : dashboardData?.todayProgress.sessionsCompleted >= (dashboardData?.todayProgress.dailyGoal || 3)
+                  ? "🎉 Daily goal achieved! Amazing work!"
+                  : "💪 Keep going! You're doing great!"}
+            </div>
+          </div>
+
+          {/* Most Sessions in a Day */}
+          <div className="bg-slate-900 rounded-xl p-4 border border-slate-800">
+            <div className="text-sm text-slate-400 mb-1">Most Session in a Day</div>
+            <div className="text-3xl font-bold text-white">{user?.stats.mostSessionsInDay || 0}</div>
+          </div>
+
+          {/* Total Work Minutes Today */}
+          <div className="bg-slate-900 rounded-xl p-4 border border-slate-800">
+            <div className="text-sm text-slate-400 mb-1">Total Work Minutes Today:</div>
+            <div className="text-3xl font-bold text-white">
+              {Math.round(dashboardData?.todayProgress.totalMinutes || 0)}
+            </div>
+          </div>
+
+          {/* Total Sessions Today */}
+          <div className="bg-slate-900 rounded-xl p-4 border border-slate-800">
+            <div className="text-sm text-slate-400 mb-1">Total Session Today:</div>
+            <div className="text-3xl font-bold text-white">
+              {dashboardData?.todayProgress.sessionsCompleted || 0}
+            </div>
+          </div>
+        </div>
+
+        {/* 7-Day Chart Section */}
+        <div className="bg-slate-900 rounded-xl p-6 border border-slate-800 mb-6">
+          <h3 className="text-lg font-bold text-white mb-4">Last 7 Days Sessions Recap</h3>
+          <div className="h-48 flex items-end justify-between gap-2">
+            {dashboardData?.weeklyProgress?.map((day, index) => {
+              const maxSessions = Math.max(...(dashboardData.weeklyProgress.map(d => d.sessions)), 1);
+              const heightPx = day.sessions > 0 ? Math.max((day.sessions / maxSessions) * 160, 20) : 8;
+              return (
+                <div key={index} className="flex-1 flex flex-col items-center gap-1">
+                  <div 
+                    className="w-full bg-emerald-500 rounded-t transition-all hover:bg-emerald-400 cursor-pointer relative group"
+                    style={{ height: `${heightPx}px` }}
+                  >
+                    <div className="absolute inset-x-0 -top-8 text-xs text-slate-300 text-center opacity-0 group-hover:opacity-100 transition-opacity">
+                      {day.sessions} sessions
+                    </div>
+                  </div>
+                  <div className="text-xs text-slate-500">{new Date(day.date).toLocaleDateString('en-US', { month: 'numeric', day: 'numeric' })}</div>
+                </div>
+              );
+            }) || Array(7).fill(0).map((_, i) => (
+              <div key={i} className="flex-1 flex flex-col items-center gap-1">
+                <div 
+                  className="w-full bg-slate-700 rounded-t relative group" 
+                  style={{ height: '8px' }}
+                >
+                  <div className="absolute inset-x-0 -top-8 text-xs text-slate-300 text-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    0 sessions
+                  </div>
+                </div>
+                <div className="text-xs text-slate-500">
+                  {new Date(Date.now() - (6-i) * 24*60*60*1000).toLocaleDateString('en-US', { month: 'numeric', day: 'numeric' })}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Evidence Modal */}
+        {showEvidenceModal && taskToComplete && (
         <EvidenceModal
           task={taskToComplete}
           onClose={() => {
@@ -358,9 +468,18 @@ const Dashboard = () => {
           </div>
         </div>
       )}
+
+      {/* Break Timer */}
+      {onBreak && (
+        <BreakTimer
+          duration={breakType === 'long' ? (user?.settings?.longBreak || 15) : (user?.settings?.shortBreak || 5)}
+          isLongBreak={breakType === 'long'}
+          onBreakEnd={handleBreakEnd}
+          onSkip={handleSkipBreak}
+        />
+      )}
       </div>
-    </Layout>
   );
 };
 
-export def
+export default Dashboard;

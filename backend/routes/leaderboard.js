@@ -81,7 +81,7 @@ router.get('/sessions', protect, async (req, res) => {
           totalDuration: { $sum: '$duration' }
         }
       },
-      { $sort: { sessionCount: -1 } },
+      { $sort: { totalDuration: -1 } },
       { $limit: 10 },
       {
         $lookup: {

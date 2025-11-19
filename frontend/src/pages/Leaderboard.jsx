@@ -44,7 +44,7 @@ const Leaderboard = () => {
         </div>
 
         {/* Tab Selection */}
-        <div className="flex gap-2 mb-6">
+        <div className="flex gap-2 mb-3">
           <button
             onClick={() => setActiveTab('streak')}
             className={`flex-1 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2 ${
@@ -65,9 +65,16 @@ const Leaderboard = () => {
             }`}
           >
             <Zap size={20} />
-            Top Grinders
+            Top Focus Time
           </button>
         </div>
+
+        {/* Description */}
+        <p className="text-center text-sm text-slate-400 mb-6">
+          {activeTab === 'streak' 
+            ? '📅 Consecutive days with completed sessions (upload evidence daily to maintain streak)'
+            : '⏱️ Ranked by total focus time - quality matters more than quantity'}
+        </p>
 
         {/* Time Range Filter (Sessions only) */}
         {activeTab === 'sessions' && (
@@ -93,7 +100,7 @@ const Leaderboard = () => {
           {loading ? (
             <div className="text-center text-slate-400 py-12">Loading...</div>
           ) : (
-            <Podium topThree={topThree} />
+            <Podium topThree={topThree} showFocusTime={activeTab === 'sessions'} />
           )}
         </div>
 
@@ -122,18 +129,27 @@ const Leaderboard = () => {
                       </div>
                       {activeTab === 'sessions' && user.totalDuration > 0 && (
                         <div className="text-sm text-slate-400">
-                          {Math.round(user.totalDuration)} minutes total
+                          {user.sessionCount} session{user.sessionCount !== 1 ? 's' : ''}
                         </div>
                       )}
                     </div>
                   </div>
                   <div className="text-right">
-                    <div className="text-2xl font-bold text-emerald-400">
-                      {activeTab === 'streak' ? user.currentStreak : user.sessionCount}
-                    </div>
-                    <div className="text-xs text-slate-400">
-                      {activeTab === 'streak' ? 'days' : 'sessions'}
-                    </div>
+                    {activeTab === 'streak' ? (
+                      <>
+                        <div className="text-2xl font-bold text-emerald-400">
+                          {user.currentStreak}
+                        </div>
+                        <div className="text-xs text-slate-400">days</div>
+                      </>
+                    ) : (
+                      <>
+                        <div className="text-2xl font-bold text-emerald-400">
+                          {Math.floor(user.totalDuration / 60)}h {Math.round(user.totalDuration % 60)}m
+                        </div>
+                        <div className="text-xs text-slate-400">focus time</div>
+                      </>
+                    )}
                   </div>
                 </div>
               ))}

@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { useState } from 'react';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import Layout from './components/Layout';
 import PrivateRoute from './components/PrivateRoute';
@@ -9,6 +10,7 @@ import History from './pages/History';
 
 const AppRoutes = () => {
   const { user } = useAuth();
+  const [activeSession, setActiveSession] = useState(null);
 
   return (
     <Routes>
@@ -20,8 +22,8 @@ const AppRoutes = () => {
         path="/"
         element={
           <PrivateRoute>
-            <Layout>
-              <Dashboard />
+            <Layout activeSession={activeSession}>
+              <Dashboard setActiveSession={setActiveSession} activeSession={activeSession} />
             </Layout>
           </PrivateRoute>
         }
@@ -30,7 +32,7 @@ const AppRoutes = () => {
         path="/leaderboard"
         element={
           <PrivateRoute>
-            <Layout>
+            <Layout activeSession={activeSession}>
               <Leaderboard />
             </Layout>
           </PrivateRoute>
@@ -40,7 +42,7 @@ const AppRoutes = () => {
         path="/history"
         element={
           <PrivateRoute>
-            <Layout>
+            <Layout activeSession={activeSession}>
               <History />
             </Layout>
           </PrivateRoute>

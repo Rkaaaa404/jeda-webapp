@@ -124,6 +124,19 @@ router.post('/stop', protect, async (req, res) => {
 
     // Update user's total session count
     user.stats.totalSessions += 1;
+
+    // Update mostSessionsInDay if needed
+    const todayStart = new Date();
+    todayStart.setHours(0, 0, 0, 0);
+    const todaySessionCount = await Session.countDocuments({
+      userId: req.user._id,
+      status: 'COMPLETED',
+      startTime: { $gte: todayStart }
+    });
+    if (todaySessionCount > user.stats.mostSessionsInDay) {
+      user.stats.mostSessionsInDay = todaySessionCount;
+    }
+
     await user.save();
 
     const populatedSession = await Session.findById(session._id).populate('taskId', 'title');

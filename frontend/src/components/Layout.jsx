@@ -114,4 +114,12 @@ const Sidebar = ({ activeSession }) => {
 const Layout = ({ children, activeSession }) => {
   return (
     <div className="flex min-h-screen bg-slate-950">
-      <Sidebar activeSession={activeSession
+      <Sidebar activeSession={activeSession} />
+      <div className="flex-1 lg:ml-64">
+        {children}
+      </div>
+    </div>
+  );
+};
+
+export default Layout;

@@ -31,6 +31,10 @@ const UserSchema = new mongoose.Schema({
     totalSessions: { 
       type: Number, 
       default: 0 
+    },
+    mostSessionsInDay: {
+      type: Number,
+      default: 0
     }
   },
   settings: {

@@ -35,43 +35,45 @@ const TaskItem = ({ task, onSelect, onComplete, onDelete, onEdit, isSelected }) 
           <h3 className="text-white font-medium mb-1">{task.title}</h3>
           {getStatusBadge()}
         </div>
-        <div className="flex gap-2 ml-2">
-          {task.status === 'IN_PROGRESS' && task.completedSessions >= task.estimatedSessions && (
-            <button
-              onClick={(e) => {
-                e.stopPropagation();
-                onComplete(task);
-              }}
-              className="text-emerald-500 hover:text-emerald-400 transition-colors"
-              title="Mark as Complete"
-            >
-              <CheckCircle size={20} />
-            </button>
-          )}
-          {task.status === 'TODO' && (
-            <>
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  onEdit(task);
-                }}
-                className="text-blue-500 hover:text-blue-400 transition-colors"
-                title="Edit Task"
-              >
-                <Edit2 size={18} />
-              </button>
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  onDelete(task._id);
-                }}
-                className="text-red-500 hover:text-red-400 transition-colors"
-                title="Delete Task"
-              >
-                <Trash2 size={18} />
-              </button>
-            </>
-          )}
+        <div className="flex gap-2 ml-2 items-center">
+          {/* Complete button: only enabled when in progress and completedSessions reached */}
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              if (task.status === 'IN_PROGRESS' && task.completedSessions >= task.estimatedSessions) onComplete(task);
+            }}
+            className={`transition-colors ${task.status === 'IN_PROGRESS' && task.completedSessions >= task.estimatedSessions ? 'text-emerald-500 hover:text-emerald-400' : 'text-slate-500 cursor-not-allowed'}`}
+            title={task.status === 'IN_PROGRESS' && task.completedSessions >= task.estimatedSessions ? 'Mark as Complete' : 'Complete available after finishing required sessions'}
+            disabled={!(task.status === 'IN_PROGRESS' && task.completedSessions >= task.estimatedSessions)}
+          >
+            <CheckCircle size={20} />
+          </button>
+
+          {/* Edit button: visible but disabled unless TODO */}
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              if (task.status === 'TODO') onEdit(task);
+            }}
+            className={`transition-colors ${task.status === 'TODO' ? 'text-blue-500 hover:text-blue-400' : 'text-slate-500 cursor-not-allowed'}`}
+            title={task.status === 'TODO' ? 'Edit Task' : 'Cannot edit while in progress or done'}
+            disabled={task.status !== 'TODO'}
+          >
+            <Edit2 size={18} />
+          </button>
+
+          {/* Delete button: visible but disabled while IN_PROGRESS */}
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              if (task.status === 'TODO') onDelete(task._id);
+            }}
+            className={`transition-colors ${task.status === 'TODO' ? 'text-red-500 hover:text-red-400' : 'text-slate-500 cursor-not-allowed'}`}
+            title={task.status === 'TODO' ? 'Delete Task' : 'Cannot delete while in progress or done'}
+            disabled={task.status !== 'TODO'}
+          >
+            <Trash2 size={18} />
+          </button>
         </div>
       </div>
 

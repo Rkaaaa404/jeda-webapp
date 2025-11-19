@@ -36,6 +36,35 @@ router.get('/', protect, async (req, res) => {
       startTime: { $gte: todayStart }
     });
 
+    // Get today's total minutes
+    const todaySessionsData = await Session.find({
+      userId: req.user._id,
+      status: 'COMPLETED',
+      startTime: { $gte: todayStart }
+    }).select('duration');
+    const totalMinutesToday = todaySessionsData.reduce((sum, s) => sum + (s.duration || 0), 0);
+
+    // Get last 7 days progress for chart
+    const weeklyProgress = [];
+    for (let i = 6; i >= 0; i--) {
+      const dayStart = new Date();
+      dayStart.setDate(dayStart.getDate() - i);
+      dayStart.setHours(0, 0, 0, 0);
+      const dayEnd = new Date(dayStart);
+      dayEnd.setHours(23, 59, 59, 999);
+
+      const sessionsCount = await Session.countDocuments({
+        userId: req.user._id,
+        status: 'COMPLETED',
+        startTime: { $gte: dayStart, $lte: dayEnd }
+      });
+
+      weeklyProgress.push({
+        date: dayStart.toISOString(),
+        sessions: sessionsCount
+      });
+    }
+
     // Check streak status (Pending vs Active)
     const lastEvidence = user.stats.lastEvidenceDate 
       ? new Date(user.stats.lastEvidenceDate)
@@ -77,9 +106,11 @@ router.get('/', protect, async (req, res) => {
         todayProgress: {
           sessionsCompleted: todaySessions,
           dailyGoal: user.stats.dailyGoal,
+          totalMinutes: totalMinutesToday,
           percentage: Math.min(100, Math.round((todaySessions / user.stats.dailyGoal) * 100))
         },
         streakStatus,
+        weeklyProgress,
         recentTasks
       }
     });
