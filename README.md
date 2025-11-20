@@ -1,9 +1,9 @@
-# JEDA - Productivity Ecosystem
+# *Jeda.* - Productivity Ecosystem
 ### *Kembali Fokus, Raih Produktivitas Maksimal*
 
 ---
 
-## 📖 Cerita di Balik JEDA
+## 📖 Cerita di Balik *Jeda.*
 
 Pernah nggak sih kamu merasa sudah kerja seharian, tapi pas ditanya "hari ini ngapain aja?", kamu bingung mau jawab apa? Atau waktu scroll Instagram, tiba-tiba udah 2 jam berlalu dan tugas masih nol progress?
 
@@ -15,13 +15,13 @@ Masalahnya bukan cuma soal motivasi. Banyak aplikasi Pomodoro di luar sana, tapi
 
 ---
 
-## 💡 Kenapa JEDA Beda dari yang Lain?
+## 💡 Kenapa *Jeda.* Beda dari yang Lain?
 
-JEDA lahir dari satu pertanyaan sederhana: *"Gimana caranya bikin timer yang jujur?"*
+*Jeda.* lahir dari satu pertanyaan sederhana: *"Gimana caranya bikin timer yang jujur?"*
 
 Jawabannya: **dengan bukti**.
 
-Di JEDA, kamu nggak bisa cuma bilang "gue udah kerja". Kamu harus **buktiin**. Setiap kali selesai task, kamu wajib upload foto hasil kerjaan—bisa screenshot kode, foto sketch desain, atau apapun yang bisa nunjukin kamu beneran produktif.
+Di *Jeda.*, kamu nggak bisa cuma bilang "gue udah kerja". Kamu harus **buktiin**. Setiap kali selesai task, kamu wajib upload foto hasil kerjaan—bisa screenshot kode, foto sketch desain, atau apapun yang bisa nunjukin kamu beneran produktif.
 
 Kedengarannya ribet? Justru di situ kuncinya. Dengan sistem ini:
 - **Kamu jadi lebih accountable**—nggak ada lagi bohong sama diri sendiri
@@ -30,7 +30,7 @@ Kedengarannya ribet? Justru di situ kuncinya. Dengan sistem ini:
 
 ### Tapi itu aja? Belum.
 
-JEDA juga punya **leaderboard**. Bayangin kamu lagi males kerja, terus lihat temen lain udah streak 20 hari. Competitive spirit kamu langsung muncul kan? "Gue juga bisa kok!" Itulah kekuatan social competition—kamu nggak cuma ngelawan diri sendiri, tapi juga termotivasi sama orang lain.
+*Jeda.* juga punya **leaderboard**. Bayangin kamu lagi males kerja, terus lihat temen lain udah streak 20 hari. Competitive spirit kamu langsung muncul kan? "Gue juga bisa kok!" Itulah kekuatan social competition—kamu nggak cuma ngelawan diri sendiri, tapi juga termotivasi sama orang lain.
 
 Plus, ada **dashboard analytics** yang nunjukin:
 - Berapa lama kamu fokus hari ini
@@ -41,9 +41,9 @@ Data nggak bohong. Dan kadang, data adalah motivasi terbaik.
 
 ---
 
-## 🎯 Siapa yang Cocok Pakai JEDA?
+## 🎯 Siapa yang Cocok Pakai *Jeda.*?
 
-Kalau kamu termasuk salah satu ini, JEDA buat kamu:
+Kalau kamu termasuk salah satu ini, *Jeda.* buat kamu:
 
 - **Mahasiswa** yang sering deadline mepet karena prokrastinasi
 - **Pekerja remote** yang susah fokus karena WFH = Work From Home atau Work From HP?
@@ -51,11 +51,11 @@ Kalau kamu termasuk salah satu ini, JEDA buat kamu:
 - **Content creator** yang butuh konsistensi bikin konten
 - **Siapa aja** yang pengen produktif tapi butuh sistem yang "maksa" mereka konsisten
 
-Intinya: kalau kamu pengen lebih dari sekadar timer, kalau kamu butuh **accountability** dan **motivasi jangka panjang**, JEDA adalah solusinya.
+Intinya: kalau kamu pengen lebih dari sekadar timer, kalau kamu butuh **accountability** dan **motivasi jangka panjang**, *Jeda.* adalah solusinya.
 
 ---
 
-## 🔥 Yang Bikin JEDA Spesial
+## 🔥 Yang Bikin *Jeda.* Spesial
 
 ### 1. Evidence-Based Productivity
 Selesai task? Upload bukti. Simpel, tapi powerful. Kamu punya portfolio visual dari semua yang udah kamu kerjain. Nggak cuma angka, tapi **proof** yang real.
@@ -73,7 +73,7 @@ Grafik mingguan nggak akan bohong. Kalau kamu bolos, grafiknya turun. Kalau kamu
 
 ## 🌟 Bayangkan Kalau...
 
-- Kamu bangun pagi, buka JEDA, dan lihat streak 15 hari. Kamu tahu persis kamu udah produktif 2 minggu berturut-turut. Rasanya kayak punya achievement yang real.
+- Kamu bangun pagi, buka *Jeda.*, dan lihat streak 15 hari. Kamu tahu persis kamu udah produktif 2 minggu berturut-turut. Rasanya kayak punya achievement yang real.
 
 - Pas lagi down dan pengen males-malesan, kamu buka leaderboard dan liat nama kamu di top 3. "Gue udah sampai sini, masa mau nyerah sekarang?"
 
@@ -81,7 +81,7 @@ Grafik mingguan nggak akan bohong. Kalau kamu bolos, grafiknya turun. Kalau kamu
 
 - Setiap minggu kamu bisa lihat grafik progres. Minggu ini lebih produktif dari minggu lalu? Great! Minggu ini turun? Saatnya introspeksi dan bangkit lagi.
 
-JEDA nggak cuma bikin kamu produktif. JEDA bikin kamu **sadar** sama produktivitas kamu, bikin kamu **accountable**, dan yang paling penting: bikin kamu **konsisten** dalam jangka panjang.
+*Jeda.* nggak cuma bikin kamu produktif. *Jeda.* bikin kamu **sadar** sama produktivitas kamu, bikin kamu **accountable**, dan yang paling penting: bikin kamu **konsisten** dalam jangka panjang.
 
 ---
 
@@ -153,7 +153,7 @@ npm install
 Buat file `.env`:
 ```env
 PORT=5000
-MONGODB_URI=mongodb://localhost:27017/jeda
+MONGODB_URI=mongodb://localhost:27017/*Jeda.*
 JWT_SECRET=your-super-secret-key-change-this
 NODE_ENV=development
 ```
@@ -180,7 +180,7 @@ npm run dev
 
 ---
 
-## 💡 Cara Menggunakan JEDA
+## 💡 Cara Menggunakan *Jeda.*
 
 ### Langkah Pertama
 1. Buka `http://localhost:3000`
