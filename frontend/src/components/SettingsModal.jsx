@@ -8,7 +8,8 @@ const SettingsModal = ({ isOpen, onClose, activeSession }) => {
   const [settings, setSettings] = useState({
     workDuration: 25,
     shortBreak: 5,
-    minSessionDuration: 5
+    minSessionDuration: 5,
+    dailyGoal: 4
   });
   const [loading, setLoading] = useState(false);
   const [saving, setSaving] = useState(false);
@@ -123,6 +124,25 @@ const SettingsModal = ({ isOpen, onClose, activeSession }) => {
               />
               <p className="text-xs text-slate-500 mt-1">
                 Fixed at {settings.minSessionDuration} minutes to prevent spam and maintain fair leaderboard competition
+              </p>
+            </div>
+
+            {/* Daily Goal */}
+            <div>
+              <label className="block text-slate-300 mb-2 text-sm font-medium">
+                Daily Session Goal
+              </label>
+              <input
+                type="number"
+                min="1"
+                max="20"
+                value={settings.dailyGoal}
+                onChange={(e) => setSettings({ ...settings, dailyGoal: parseInt(e.target.value) })}
+                disabled={activeSession}
+                className="w-full bg-slate-700 border border-slate-600 text-white px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 disabled:opacity-50 disabled:cursor-not-allowed"
+              />
+              <p className="text-xs text-slate-400 mt-1">
+                Set your own daily goal to keep you productive
               </p>
             </div>
             </div>

@@ -6,13 +6,13 @@ import Session from '../models/Session.js';
 const router = express.Router();
 
 // @route   GET /api/leaderboard/streak
-// @desc    Get top users by current streak
+// @desc    Get top users by longest streak
 // @access  Private
 router.get('/streak', protect, async (req, res) => {
   try {
     const topUsers = await User.find()
       .select('username stats.currentStreak stats.longestStreak')
-      .sort({ 'stats.currentStreak': -1 })
+      .sort({ 'stats.longestStreak': -1 })
       .limit(10);
 
     res.json({

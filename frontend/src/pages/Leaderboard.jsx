@@ -72,7 +72,7 @@ const Leaderboard = () => {
         {/* Description */}
         <p className="text-center text-sm text-slate-400 mb-6">
           {activeTab === 'streak' 
-            ? '📅 Consecutive days with completed sessions (upload evidence daily to maintain streak)'
+            ? '📅 Longest streak of all time - your record consecutive days achievement'
             : '⏱️ Ranked by total focus time - quality matters more than quantity'}
         </p>
 
@@ -138,7 +138,7 @@ const Leaderboard = () => {
                     {activeTab === 'streak' ? (
                       <>
                         <div className="text-2xl font-bold text-emerald-400">
-                          {user.currentStreak}
+                          {user.longestStreak}
                         </div>
                         <div className="text-xs text-slate-400">days</div>
                       </>

@@ -69,7 +69,7 @@ const Podium = ({ topThree, showFocusTime }) => {
                 {showFocusTime ? (
                   `${Math.floor(user.totalDuration / 60)}h ${Math.round(user.totalDuration % 60)}m`
                 ) : (
-                  `${user.currentStreak} day${user.currentStreak !== 1 ? 's' : ''}`
+                  `${user.longestStreak} day${user.longestStreak !== 1 ? 's' : ''}`
                 )}
               </div>
               {user.isCurrentUser && (

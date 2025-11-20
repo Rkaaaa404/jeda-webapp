@@ -9,11 +9,14 @@ const router = express.Router();
 // @access  Private
 router.get('/', protect, async (req, res) => {
   try {
-    const user = await User.findById(req.user._id).select('settings');
+    const user = await User.findById(req.user._id).select('settings stats.dailyGoal');
     
     res.json({
       success: true,
-      data: user.settings
+      data: {
+        ...user.settings.toObject(),
+        dailyGoal: user.stats.dailyGoal
+      }
     });
   } catch (error) {
     console.error(error);
@@ -29,19 +32,23 @@ router.get('/', protect, async (req, res) => {
 // @access  Private
 router.put('/', protect, async (req, res) => {
   try {
-    const { workDuration, shortBreak, minSessionDuration } = req.body;
+    const { workDuration, shortBreak, minSessionDuration, dailyGoal } = req.body;
     
     const user = await User.findById(req.user._id);
     
     if (workDuration !== undefined) user.settings.workDuration = workDuration;
     if (shortBreak !== undefined) user.settings.shortBreak = shortBreak;
     if (minSessionDuration !== undefined) user.settings.minSessionDuration = minSessionDuration;
+    if (dailyGoal !== undefined) user.stats.dailyGoal = dailyGoal;
     
     await user.save();
     
     res.json({
       success: true,
-      data: user.settings
+      data: {
+        ...user.settings.toObject(),
+        dailyGoal: user.stats.dailyGoal
+      }
     });
   } catch (error) {
     console.error(error);
