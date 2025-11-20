@@ -46,10 +46,6 @@ const UserSchema = new mongoose.Schema({
       type: Number,
       default: 5 // minutes
     },
-    longBreak: {
-      type: Number,
-      default: 15 // minutes
-    },
     minSessionDuration: {
       type: Number,
       default: 5 // minimum minutes before allowing end session

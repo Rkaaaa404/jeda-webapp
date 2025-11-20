@@ -29,13 +29,12 @@ router.get('/', protect, async (req, res) => {
 // @access  Private
 router.put('/', protect, async (req, res) => {
   try {
-    const { workDuration, shortBreak, longBreak, minSessionDuration } = req.body;
+    const { workDuration, shortBreak, minSessionDuration } = req.body;
     
     const user = await User.findById(req.user._id);
     
     if (workDuration !== undefined) user.settings.workDuration = workDuration;
     if (shortBreak !== undefined) user.settings.shortBreak = shortBreak;
-    if (longBreak !== undefined) user.settings.longBreak = longBreak;
     if (minSessionDuration !== undefined) user.settings.minSessionDuration = minSessionDuration;
     
     await user.save();

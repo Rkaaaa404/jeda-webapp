@@ -1,58 +1,142 @@
-# JEDA - Fullstack Productivity Ecosystem
+# JEDA - Productivity Ecosystem
+### *Kembali Fokus, Raih Produktivitas Maksimal*
 
-**A distraction-free productivity web application where users plan tasks, execute focus sessions (Pomodoro), and MUST upload visual evidence to validate their work.**
+---
 
-Built with the MERN stack, featuring gamification (streaks) and social competition (leaderboards).
+## 📖 Cerita di Balik JEDA
+
+Pernah nggak sih kamu merasa sudah kerja seharian, tapi pas ditanya "hari ini ngapain aja?", kamu bingung mau jawab apa? Atau waktu scroll Instagram, tiba-tiba udah 2 jam berlalu dan tugas masih nol progress?
+
+Kamu nggak sendirian. Di era sekarang, distraksi ada di mana-mana. Notifikasi WhatsApp, TikTok yang endless scroll, dan kebiasaan multitasking yang ternyata cuma bikin kita sibuk tapi nggak produktif. Mahasiswa, pekerja remote, freelancer, bahkan content creator—semua punya tantangan yang sama: **susah fokus dan susah konsisten**.
+
+Masalahnya bukan cuma soal motivasi. Banyak aplikasi Pomodoro di luar sana, tapi kebanyakan cuma timer doang. Kamu bisa aja nyalain timer, trus malah main game atau scrolling. Pas timer bunyi, kamu bilang "udah selesai", padahal tugas belum dikerjain sama sekali. Timer nggak peduli kamu produktif atau nggak—dia cuma hitung waktu.
+
+**Terus gimana dong?**
+
+---
+
+## 💡 Kenapa JEDA Beda dari yang Lain?
+
+JEDA lahir dari satu pertanyaan sederhana: *"Gimana caranya bikin timer yang jujur?"*
+
+Jawabannya: **dengan bukti**.
+
+Di JEDA, kamu nggak bisa cuma bilang "gue udah kerja". Kamu harus **buktiin**. Setiap kali selesai task, kamu wajib upload foto hasil kerjaan—bisa screenshot kode, foto sketch desain, atau apapun yang bisa nunjukin kamu beneran produktif.
+
+Kedengarannya ribet? Justru di situ kuncinya. Dengan sistem ini:
+- **Kamu jadi lebih accountable**—nggak ada lagi bohong sama diri sendiri
+- **Progress kamu terukur**—bukan cuma angka di timer, tapi ada bukti visual yang bisa kamu lihat kapan aja
+- **Motivasi naik**—lihat streak 15 hari berturut-turut, rasanya kayak achievement di game yang bikin kamu pengen terus main
+
+### Tapi itu aja? Belum.
+
+JEDA juga punya **leaderboard**. Bayangin kamu lagi males kerja, terus lihat temen lain udah streak 20 hari. Competitive spirit kamu langsung muncul kan? "Gue juga bisa kok!" Itulah kekuatan social competition—kamu nggak cuma ngelawan diri sendiri, tapi juga termotivasi sama orang lain.
+
+Plus, ada **dashboard analytics** yang nunjukin:
+- Berapa lama kamu fokus hari ini
+- Berapa sesi kamu selesaiin minggu ini
+- Grafik 7 hari terakhir yang jujur nunjukin: hari mana kamu rajin, hari mana kamu bolos
+
+Data nggak bohong. Dan kadang, data adalah motivasi terbaik.
+
+---
+
+## 🎯 Siapa yang Cocok Pakai JEDA?
+
+Kalau kamu termasuk salah satu ini, JEDA buat kamu:
+
+- **Mahasiswa** yang sering deadline mepet karena prokrastinasi
+- **Pekerja remote** yang susah fokus karena WFH = Work From Home atau Work From HP?
+- **Freelancer** yang pengen lebih disiplin ngatur waktu
+- **Content creator** yang butuh konsistensi bikin konten
+- **Siapa aja** yang pengen produktif tapi butuh sistem yang "maksa" mereka konsisten
+
+Intinya: kalau kamu pengen lebih dari sekadar timer, kalau kamu butuh **accountability** dan **motivasi jangka panjang**, JEDA adalah solusinya.
+
+---
+
+## 🔥 Yang Bikin JEDA Spesial
+
+### 1. Evidence-Based Productivity
+Selesai task? Upload bukti. Simpel, tapi powerful. Kamu punya portfolio visual dari semua yang udah kamu kerjain. Nggak cuma angka, tapi **proof** yang real.
+
+### 2. Streak System yang Adiktif
+Setiap hari upload evidence, streak kamu naik. Streak putus? Mulai dari nol lagi. Sistem ini bikin kamu konsisten bukan karena dipaksa, tapi karena **nggak mau effort kemarin sia-sia**.
+
+### 3. Leaderboard untuk Kompetisi Sehat
+Liat siapa yang paling konsisten (Top Streaks) dan siapa yang paling banyak kerja (Top Focus Time). Kadang kita butuh sedikit kompetisi untuk jadi versi terbaik diri kita.
+
+### 4. Dashboard yang Jujur
+Grafik mingguan nggak akan bohong. Kalau kamu bolos, grafiknya turun. Kalau kamu konsisten, grafiknya naik. Transparansi ini yang bikin kamu lebih aware sama produktivitas kamu sendiri.
+
+---
+
+## 🌟 Bayangkan Kalau...
+
+- Kamu bangun pagi, buka JEDA, dan lihat streak 15 hari. Kamu tahu persis kamu udah produktif 2 minggu berturut-turut. Rasanya kayak punya achievement yang real.
+
+- Pas lagi down dan pengen males-malesan, kamu buka leaderboard dan liat nama kamu di top 3. "Gue udah sampai sini, masa mau nyerah sekarang?"
+
+- Akhir semester, kamu punya portfolio visual dari semua task yang udah kamu selesaiin. Bukan cuma nilai di transkrip, tapi **bukti nyata** bahwa kamu beneran kerja keras.
+
+- Setiap minggu kamu bisa lihat grafik progres. Minggu ini lebih produktif dari minggu lalu? Great! Minggu ini turun? Saatnya introspeksi dan bangkit lagi.
+
+JEDA nggak cuma bikin kamu produktif. JEDA bikin kamu **sadar** sama produktivitas kamu, bikin kamu **accountable**, dan yang paling penting: bikin kamu **konsisten** dalam jangka panjang.
+
+---
+
+## 🚀 How It Works (Cara Kerjanya)
+
+---
+
+## ✨ Fitur Utama
+
+### 🎯 Task & Session Management
+- Buat task dengan estimasi jumlah sesi Pomodoro
+- Jalankan timer 25 menit (default, bisa disesuaikan di Settings)
+- Break otomatis 5 menit setelah setiap sesi fokus
+- Lacak progress setiap task: completed sessions vs estimated sessions
+- Edit nama task kapan saja, edit jumlah sesi untuk task TODO dan IN_PROGRESS
+
+### 🔥 Streak & Gamification
+- **Current Streak**: Berapa hari berturut-turut Anda upload evidence
+- **Longest Streak**: Rekor pribadi Anda
+- **Streak Status**: Active (upload hari ini), Pending (belum upload), atau Broken (terputus)
+- Motivasi visual dengan ikon api 🔥 untuk streak aktif
+
+### 📊 Dashboard Analytics
+- **Statistics Cards**: Current Streak, Longest Streak, Daily Goal, Most Sessions in a Day, Total Work Minutes Today, Total Sessions Today
+- **7-Day Chart**: Grafik bar menampilkan jumlah sesi per hari selama seminggu terakhir
+- **Real-time Updates**: Data diperbarui otomatis setiap kali Anda menyelesaikan sesi atau upload evidence
+
+### 🏆 Leaderboard
+- **Top Streaks**: Ranking berdasarkan current streak (siapa paling konsisten)
+- **Top Focus Time**: Ranking berdasarkan total durasi sesi (Today/Week/Month/All-Time)
+- **Podium Display**: Top 3 ditampilkan dengan visual podium, rank #4 dst dalam list
+- **Current User Highlight**: Username Anda ditandai dengan badge "You" dan warna berbeda
+
+### ⚙️ Customization
+- Atur durasi work session dan break duration
+- Set daily goal (target sesi per hari)
+- Minimum session duration untuk mencegah sesi terlalu pendek
 
 ---
 
 ## 🛠️ Tech Stack
 
-### Backend
-- **Node.js** + **Express.js** - REST API Server
-- **MongoDB** + **Mongoose** - Database & ODM
-- **JWT** + **bcryptjs** - Authentication
-- **Multer** - File Upload (Evidence Images)
-
-### Frontend
-- **React 18** + **Vite** - Fast Development
-- **Tailwind CSS** - Dark Mode UI (Slate-950 + Emerald-500)
-- **React Router** - Navigation
-- **Lucide React** - Icons
-- **Axios** - API Client
+**Backend**: Node.js, Express.js, MongoDB, Mongoose, JWT, Multer  
+**Frontend**: React 18, Vite, Tailwind CSS, React Router, Axios  
+**Design**: Dark mode UI (Slate-950 + Emerald-500), Lucide React icons
 
 ---
 
-## 🎯 Core Features
+## 📦 Setup & Installation
 
-### 1. Task-Based Workflow
-1. **Plan** - Create tasks with estimated sessions
-2. **Focus** - Select task → Start 25-min timer
-3. **Log** - Timer ends → Session saved → Progress updated
-4. **Complete** - Mark task DONE → Upload evidence photo
-5. **Validate** - Evidence uploaded → Streak updated ✨
-
-### 2. Gamification
-- **Streak System**
-  - 🔥 **Active**: Evidence uploaded today
-  - ⚪ **Pending**: Active today but no evidence yet
-  - **Reset**: Missed yesterday = streak reset to 0
-- **Leaderboards**
-  - Top Streaks (by current streak)
-  - Top Grinders (by sessions: Today/Week/Month/All-Time)
-
-### 3. IoT Ready
-- Sessions can be triggered via Web or IoT devices (future)
-- `source` field in Session model: `WEB` | `IOT`
-
----
-
-## 📦 Installation & Setup
 
 ### Prerequisites
-- **Node.js** (v18+ recommended)
-- **MongoDB** (Local or Atlas)
-- **Git**
+- Node.js (v18+)
+- MongoDB (lokal atau MongoDB Atlas)
+- Git
 
 ### 1. Clone Repository
 ```bash
@@ -60,14 +144,13 @@ git clone <repository-url>
 cd vibe-coding
 ```
 
-### 2. Backend Setup
+### 2. Setup Backend
 ```bash
 cd backend
 npm install
 ```
 
-**Configure Environment Variables**  
-Create `backend/.env`:
+Buat file `.env`:
 ```env
 PORT=5000
 MONGODB_URI=mongodb://localhost:27017/jeda
@@ -75,159 +158,154 @@ JWT_SECRET=your-super-secret-key-change-this
 NODE_ENV=development
 ```
 
-**Start MongoDB** (if using local instance):
+Jalankan seeder untuk data testing (opsional):
 ```bash
-# Windows (if installed as service)
-net start MongoDB
-
-# Or using mongod directly
-mongod --dbpath C:\data\db
+npm run seed
 ```
+*Seeder membuat 5 akun testing dengan berbagai level streak dan sesi*
 
-**Run Backend Server**:
+Jalankan server:
 ```bash
 npm run dev
-# Server runs on http://localhost:5000
+# Server berjalan di http://localhost:5000
 ```
 
-### 3. Frontend Setup
+### 3. Setup Frontend
 ```bash
 cd ../frontend
 npm install
 npm run dev
-# App runs on http://localhost:3000
+# Aplikasi berjalan di http://localhost:3000
 ```
 
 ---
 
-## 🚀 Usage Guide
+## 💡 Cara Menggunakan JEDA
 
-### First Time Setup
-1. Navigate to `http://localhost:3000`
-2. Click **Register** → Create account
-3. Login with credentials
+### Langkah Pertama
+1. Buka `http://localhost:3000`
+2. **Register** → Buat akun baru
+3. **Login** dengan kredensial kamu
 
-### Creating Tasks
-1. Dashboard → Click **"+ New Task"**
-2. Enter title (e.g., "Build Login Feature")
-3. Set estimated sessions (default: 1)
-4. Click **Add**
+### Membuat Task
+1. Di Dashboard → Klik tombol **"+ New Task"**
+2. Masukkan judul task (contoh: "Belajar React Hooks")
+3. Set estimasi sesi Pomodoro (default: 1, bisa lebih)
+4. Klik **Add**
 
-### Focus Sessions
-1. Click a task to **select** it (highlights in green)
-2. Click **"Start Focus"** → 25-minute timer begins
-3. Work on the task
-4. Click **"End Session"** when done
-5. Task progress updates automatically
+### Menjalankan Sesi Fokus
+1. **Pilih task** yang mau dikerjakan (klik card task → highlight hijau)
+2. Klik **"Start Focus"** → Timer 25 menit dimulai
+3. Fokus ngerjain task tanpa distraksi
+4. Klik **"End Session"** setelah selesai atau waktu habis
+5. Progress task otomatis bertambah
 
-### Completing Tasks
-1. When ready to finish a task, click the **✓ icon** (IN_PROGRESS tasks only)
-2. **Evidence Modal** appears
-3. Upload a photo of your work (screenshot, photo, etc.)
-4. Click **"Submit Evidence"**
-5. 🔥 Streak updated! Task marked DONE
+### Menyelesaikan Task
+1. Setelah task siap diselesaikan, klik ikon **✓** (hanya muncul jika status IN_PROGRESS dan sesi udah cukup)
+2. Modal upload evidence muncul
+3. Upload foto/screenshot hasil kerja kamu
+4. Klik **"Submit Evidence"**
+5. 🔥 Streak kamu naik! Task ditandai DONE
 
-### Checking Leaderboard
-1. Navigate to **Leaderboard** page
-2. Switch tabs:
-   - **Top Streaks** - Users with longest current streaks
-   - **Top Grinders** - Most sessions completed
-3. Filter Grinders by: Today / Week / Month / All-Time
+### Cek Leaderboard
+1. Klik menu **Leaderboard** di sidebar
+2. Lihat dua tab:
+   - **Top Streaks**: User dengan streak terpanjang (konsistensi)
+   - **Top Focus Time**: User dengan total sesi terbanyak
+3. Filter Focus Time berdasarkan periode: Today / Week / Month / All-Time
 
-### Viewing History
-1. Navigate to **History** page
-2. See all completed tasks with evidence images
-3. Visual grid view of your validated work
+### Lihat History
+1. Klik menu **History** di sidebar
+2. Semua task yang udah diselesaikan ditampilkan dengan foto evidence
+3. Visual portfolio hasil kerja kamu
 
 ---
 
-## 🔌 API Reference
+## 🔌 API Endpoints
 
 ### Authentication
 ```
-POST /api/auth/register   - Create new account
+POST /api/auth/register   - Daftar akun baru
 POST /api/auth/login      - Login
-GET  /api/auth/me         - Get current user
+GET  /api/auth/me         - Data user saat ini
 ```
 
 ### Tasks
 ```
-GET    /api/tasks              - Get all user tasks
-POST   /api/tasks              - Create task
+GET    /api/tasks              - Semua task user
+POST   /api/tasks              - Buat task baru
 PUT    /api/tasks/:id          - Update task
-PUT    /api/tasks/:id/complete - Complete task (with evidence upload)
-DELETE /api/tasks/:id          - Delete task
+PUT    /api/tasks/:id/complete - Selesaikan task (upload evidence)
+DELETE /api/tasks/:id          - Hapus task
 ```
 
-### Sessions (Timer)
+### Sessions
 ```
-POST /api/sessions/start   - Start focus session
-POST /api/sessions/stop    - Stop active session
-GET  /api/sessions/active  - Get current active session
-GET  /api/sessions         - Get session history
-```
-
-### Leaderboard
-```
-GET /api/leaderboard/streak             - Top users by streak
-GET /api/leaderboard/sessions?range=all - Top users by sessions
+POST /api/sessions/start   - Mulai sesi fokus
+POST /api/sessions/stop    - Hentikan sesi aktif
+GET  /api/sessions/active  - Cek sesi yang sedang berjalan
+GET  /api/sessions         - Riwayat semua sesi
 ```
 
-### Dashboard
+### Leaderboard & Dashboard
 ```
-GET /api/dashboard - Get user stats, active task, today's progress
+GET /api/leaderboard/streak             - Top user by streak
+GET /api/leaderboard/sessions?range=all - Top user by sessions
+GET /api/dashboard                      - Stats dashboard user
 ```
 
 ---
 
-## 📂 Project Structure
+## 📂 Struktur Project
 
 ```
 vibe-coding/
 ├── backend/
 │   ├── config/
-│   │   ├── db.js           # MongoDB connection
-│   │   └── multer.js       # File upload config
+│   │   ├── db.js           # Koneksi MongoDB
+│   │   └── multer.js       # Konfigurasi upload file
 │   ├── middleware/
 │   │   └── auth.js         # JWT authentication
 │   ├── models/
-│   │   ├── User.js         # User schema (with stats)
-│   │   ├── Task.js         # Task schema
-│   │   └── Session.js      # Session schema
+│   │   ├── User.js         # Schema user + stats
+│   │   ├── Task.js         # Schema task
+│   │   └── Session.js      # Schema session timer
 │   ├── routes/
-│   │   ├── auth.js         # Auth endpoints
-│   │   ├── tasks.js        # Task CRUD + evidence
-│   │   ├── sessions.js     # Timer start/stop
-│   │   ├── leaderboard.js  # Aggregation queries
-│   │   └── dashboard.js    # Dashboard data
-│   ├── public/uploads/     # Evidence images storage
-│   ├── server.js           # Express app entry
-│   ├── package.json
-│   └── .env
+│   │   ├── auth.js         # Endpoint auth
+│   │   ├── tasks.js        # CRUD task + evidence
+│   │   ├── sessions.js     # Start/stop timer
+│   │   ├── leaderboard.js  # Query ranking
+│   │   ├── dashboard.js    # Data dashboard
+│   │   └── settings.js     # User settings
+│   ├── seeders/
+│   │   └── seed.js         # Database seeder
+│   ├── public/uploads/     # Storage foto evidence
+│   ├── server.js           # Entry point Express
+│   └── package.json
 │
 ├── frontend/
 │   ├── src/
 │   │   ├── components/
 │   │   │   ├── Layout.jsx          # Sidebar navigation
-│   │   │   ├── PrivateRoute.jsx    # Auth guard
+│   │   │   ├── PrivateRoute.jsx    # Route guard
 │   │   │   ├── TimerDisplay.jsx    # Circular timer
-│   │   │   ├── TaskItem.jsx        # Task card
-│   │   │   ├── EvidenceModal.jsx   # Upload modal
-│   │   │   └── Podium.jsx          # Leaderboard podium
+│   │   │   ├── TaskItem.jsx        # Card task
+│   │   │   ├── EvidenceModal.jsx   # Modal upload evidence
+│   │   │   ├── SettingsModal.jsx   # Modal pengaturan
+│   │   │   ├── BreakTimer.jsx      # Timer break
+│   │   │   └── Podium.jsx          # Podium leaderboard
 │   │   ├── context/
-│   │   │   └── AuthContext.jsx     # Auth state
+│   │   │   └── AuthContext.jsx     # State management auth
 │   │   ├── pages/
-│   │   │   ├── Login.jsx           # Auth page
-│   │   │   ├── Dashboard.jsx       # Main app (timer + tasks)
-│   │   │   ├── Leaderboard.jsx     # Rankings
-│   │   │   └── History.jsx         # Completed tasks
+│   │   │   ├── Login.jsx           # Halaman login/register
+│   │   │   ├── Dashboard.jsx       # Halaman utama (timer + tasks + stats)
+│   │   │   ├── Leaderboard.jsx     # Halaman ranking
+│   │   │   └── History.jsx         # Riwayat task selesai
 │   │   ├── utils/
-│   │   │   └── api.js              # Axios instance + API calls
+│   │   │   └── api.js              # Axios API calls
 │   │   ├── App.jsx                 # Router setup
-│   │   ├── main.jsx                # React entry
-│   │   └── index.css               # Tailwind styles
-│   ├── index.html
-│   ├── package.json
+│   │   ├── main.jsx                # React entry point
+│   │   └── index.css               # Tailwind CSS
 │   ├── vite.config.js
 │   └── tailwind.config.js
 │
@@ -236,161 +314,120 @@ vibe-coding/
 
 ---
 
-## 🧠 Business Logic Details
+## 🧠 Logika Bisnis Utama
 
-### Streak Calculation Algorithm
+### Algoritma Streak
 ```javascript
-// In backend/routes/tasks.js - updateStreak()
+// Saat user upload evidence:
 
-IF user has NO previous evidence:
+JIKA belum pernah upload evidence:
   currentStreak = 1
   
-ELSE IF lastEvidenceDate == TODAY:
-  // No change (already uploaded today)
+JIKA sudah upload HARI INI:
+  tidak ada perubahan (sudah dihitung)
   
-ELSE IF lastEvidenceDate == YESTERDAY:
-  currentStreak += 1  // Consecutive day
+JIKA upload terakhir KEMARIN:
+  currentStreak += 1  // Lanjut beruntun
   
-ELSE:
-  currentStreak = 1   // Streak broken, restart
+JIKA upload terakhir > 1 hari lalu:
+  currentStreak = 1   // Streak reset
   
-// Always update longestStreak if current > longest
+// Update longest streak jika current melebihi record
 longestStreak = max(currentStreak, longestStreak)
 ```
 
-### Session Flow
-1. User selects Task → Task status becomes `IN_PROGRESS`
-2. Start Timer → Create `Session` with `status: ONGOING`
-3. Stop Timer → Update `Session.endTime`, calculate `duration`
+### Alur Session
+1. User pilih Task → Status task jadi `IN_PROGRESS`
+2. Klik Start → Buat record `Session` dengan `status: ONGOING`
+3. Klik Stop → Update `endTime`, hitung `duration` (menit)
 4. Increment `Task.completedSessions`
 5. Increment `User.stats.totalSessions`
+6. Check apakah hari ini sesi terbanyak → Update `mostSessionsInDay`
 
-### Evidence Requirement
-- Tasks can only be marked `DONE` with evidence upload
-- Evidence is a required file in the complete endpoint
-- Uploads stored in `backend/public/uploads/`
-- URL saved in `Task.evidenceImage`
-
----
-
-## 🎨 UI/UX Highlights
-
-- **Dark Mode Only** - Slate-950 background
-- **Emerald Accents** - Primary color (#10b981)
-- **Circular Timer** - Visual progress indicator
-- **Streak Icons**
-  - 🔥 Fire (Active streak)
-  - ⚪ Circle (Pending/Inactive)
-- **Podium Display** - 🏆 Trophy for top 3 users
-- **Responsive Design** - Mobile-friendly sidebar
+### Validasi Evidence
+- Task hanya bisa di-DONE jika upload foto
+- File wajib berupa gambar (jpg/png/gif/webp)
+- Maksimal ukuran 5MB
+- Disimpan di `backend/public/uploads/`
+- Path URL disimpan di `Task.evidenceImage`
 
 ---
 
-## 🔐 Security Features
+## 🎨 Highlight UI/UX
 
-- **JWT Authentication** - Token-based auth
-- **Password Hashing** - bcryptjs with salt rounds
-- **Protected Routes** - Auth middleware on all private endpoints
-- **File Validation** - Image-only uploads, 5MB limit
-- **Input Sanitization** - Mongoose schema validation
-
----
-
-## 🧪 Testing the App
-
-### Test User Journey
-1. **Register** a new account
-2. **Create** 2-3 tasks
-3. **Select** a task and **start** timer
-4. Wait or **stop** immediately (for testing)
-5. Observe task progress increment
-6. **Complete** a task → Upload any image
-7. Check **streak icon** changes to 🔥
-8. View **Leaderboard** → See yourself ranked
-9. Go to **History** → See completed task with image
-
-### Sample Tasks to Create
-- "Build Authentication System" (2 sessions)
-- "Design Dashboard UI" (3 sessions)
-- "Write API Documentation" (1 session)
+- **Dark Mode**: Background Slate-950 untuk fokus maksimal
+- **Emerald Accent**: Warna primer #10b981 untuk CTA dan progress
+- **Circular Timer**: Visualisasi progres waktu yang intuitif
+- **Streak Icons**:
+  - 🔥 Api (streak aktif)
+  - ⚪ Lingkaran (pending/tidak aktif)
+- **Podium Display**: Trophy 🏆 untuk top 3 user
+- **Statistics Cards**: 6 card informatif di dashboard
+- **7-Day Chart**: Bar chart visual progress mingguan
+- **Responsive Design**: Mobile-friendly dengan sidebar adaptif
 
 ---
 
-## 🚧 Future Enhancements (Not in MVP)
+## 🔐 Keamanan
 
-- IoT device integration (ESP32/Arduino triggers)
-- Real-time notifications (Socket.io)
-- Team/group productivity tracking
-- Advanced analytics (charts, trends)
-- Task categories/tags
-- Custom timer durations
-- Sound notifications
-- Dark/Light mode toggle
+- **JWT Authentication**: Token-based auth dengan expiry
+- **Password Hashing**: bcryptjs dengan salt rounds
+- **Protected Routes**: Middleware auth di semua endpoint private
+- **File Validation**: Hanya terima file gambar, max 5MB
+- **Input Sanitization**: Mongoose schema validation
 
 ---
 
-## 📝 Development Notes
+## 🧪 Testing Manual
 
-### MongoDB Collections
-- `users` - User accounts and stats
-- `tasks` - User tasks with evidence
-- `sessions` - Focus session records
+### User Journey Lengkap
+1. **Register** akun baru (username min 3 karakter)
+2. **Login** dengan kredensial
+3. **Buat** 2-3 task dengan estimasi berbeda
+4. **Pilih** task pertama, **klik Start**
+5. **Tunggu** timer atau stop langsung (untuk testing)
+6. Lihat progress task bertambah otomatis
+7. **Complete** task → Upload gambar apa saja
+8. Cek streak icon berubah jadi 🔥
+9. Buka **Leaderboard** → Lihat ranking Anda
+10. Buka **History** → Lihat task selesai dengan foto
+11. Klik **Settings** → Ubah durasi timer/daily goal
 
-### Key Dependencies
-**Backend:**
-- `express@^4.18.2`
-- `mongoose@^8.0.0`
-- `bcryptjs@^2.4.3`
-- `jsonwebtoken@^9.0.2`
-- `multer@^1.4.5`
+### Contoh Task untuk Testing
+- "Membangun Fitur Autentikasi" (2 sesi)
+- "Desain Dashboard UI" (3 sesi)
+- "Menulis Dokumentasi API" (1 sesi)
 
-**Frontend:**
-- `react@^18.2.0`
-- `react-router-dom@^6.20.0`
-- `axios@^1.6.2`
-- `lucide-react@^0.294.0`
-- `tailwindcss@^3.3.6`
-
----
-
-## 🤝 Contributing
-
-This is a MVP phase project. Core features are complete. For enhancements:
-1. Fork the repository
-2. Create feature branch
-3. Commit changes
-4. Push and create Pull Request
-
----
-
-## 📄 License
-
-MIT License - Feel free to use for learning/personal projects.
+### Data Seeder
+Kalau kamu sudah run `npm run seed`, ada 5 akun testing:
+- **alice_wonder** (password: password123) - 15 day streak
+- **bob_builder** (password: password123) - 7 day streak
+- **charlie_code** (password: password123) - 3 day streak
+- **diana_dev** (password: password123) - 1 day streak
+- **evan_engineer** (password: password123) - 0 day streak
 
 ---
 
 ## 🆘 Troubleshooting
 
-### Backend won't start
-- Check MongoDB is running
-- Verify `.env` file exists with correct values
-- Run `npm install` in backend directory
+### Backend tidak bisa start
+- Pastikan MongoDB berjalan (cek dengan `mongod` atau service MongoDB)
+- Periksa file `.env` ada dan isinya benar
+- Jalankan `npm install` di folder backend
 
-### Frontend won't connect to API
-- Ensure backend is running on port 5000
-- Check Vite proxy config in `vite.config.js`
-- Verify CORS is enabled in `server.js`
+### Frontend tidak konek ke API
+- Pastikan backend berjalan di port 5000
+- Cek konfigurasi proxy di `vite.config.js`
+- Pastikan CORS enabled di `server.js`
 
-### Image upload fails
-- Check `backend/public/uploads/` directory exists
-- Verify file size < 5MB
-- Ensure file is an image type (jpg/png/gif/webp)
+### Upload gambar gagal
+- Periksa folder `backend/public/uploads/` ada
+- Pastikan ukuran file < 5MB
+- File harus berupa gambar (jpg/png/gif/webp)
 
-### Streak not updating
-- Ensure task is marked `IN_PROGRESS` before completing
-- Verify evidence image is uploaded successfully
-- Check backend logs for errors
+### Streak tidak update
+- Pastikan task sudah IN_PROGRESS sebelum complete
+- Verifikasi gambar terupload dengan sukses
+- Cek log backend untuk error
 
 ---
-
-**Built with ❤️ for the productivity-obsessed**

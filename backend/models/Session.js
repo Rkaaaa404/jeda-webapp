@@ -24,11 +24,6 @@ const SessionSchema = new mongoose.Schema({
     default: 0 
   }, // Minutes
   
-  source: { 
-    type: String, 
-    enum: ['WEB', 'IOT'], 
-    default: 'WEB' 
-  },
   status: { 
     type: String, 
     enum: ['ONGOING', 'COMPLETED'], 

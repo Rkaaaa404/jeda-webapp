@@ -52,32 +52,34 @@ const Podium = ({ topThree, showFocusTime }) => {
   const podiumOrder = [topThree[1], topThree[0], topThree[2]].filter(Boolean);
 
   return (
-    <div className="flex items-end justify-center gap-6 mb-8 px-6">
+    <div className="flex items-end justify-center gap-8 mb-8 px-6">
       {podiumOrder.map((user, index) => {
         const actualRank = user.rank;
         return (
-          <div key={user.username} className="flex flex-col items-center max-w-xs">
+          <div key={user.username} className="flex flex-col items-center w-32">
             {/* User Info */}
-            <div className="mb-3 text-center">
-              {getPodiumIcon(actualRank)}
-              <div className="text-white font-semibold mt-2">{user.username}</div>
-              {showFocusTime ? (
-                <div className="text-emerald-400 text-sm font-semibold mt-1">
-                  {Math.floor(user.totalDuration / 60)}h {Math.round(user.totalDuration % 60)}m
-                </div>
-              ) : (
-                <div className="text-emerald-400 text-sm font-semibold mt-1">
-                  {user.currentStreak} day{user.currentStreak !== 1 ? 's' : ''}
-                </div>
-              )}
+            <div className="mb-4 flex flex-col items-center w-full">
+              <div className="mb-2">
+                {getPodiumIcon(actualRank)}
+              </div>
+              <div className="text-white font-semibold text-center w-full truncate px-2">
+                {user.username}
+              </div>
+              <div className="text-emerald-400 text-sm font-semibold mt-1 text-center w-full">
+                {showFocusTime ? (
+                  `${Math.floor(user.totalDuration / 60)}h ${Math.round(user.totalDuration % 60)}m`
+                ) : (
+                  `${user.currentStreak} day${user.currentStreak !== 1 ? 's' : ''}`
+                )}
+              </div>
               {user.isCurrentUser && (
-                <div className="text-xs text-emerald-500 mt-1">You</div>
+                <div className="text-xs text-emerald-500 mt-1 text-center w-full">You</div>
               )}
             </div>
 
             {/* Podium */}
             <div
-              className={`w-28 ${getPodiumHeight(actualRank)} ${getBackgroundColor(
+              className={`w-full ${getPodiumHeight(actualRank)} ${getBackgroundColor(
                 actualRank
               )} border-2 rounded-t-lg flex items-center justify-center transition-all hover:scale-105`}
             >

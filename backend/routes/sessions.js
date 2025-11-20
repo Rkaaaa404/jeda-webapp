@@ -11,7 +11,7 @@ const router = express.Router();
 // @access  Private
 router.post('/start', protect, async (req, res) => {
   try {
-    const { taskId, source = 'WEB' } = req.body;
+    const { taskId } = req.body;
 
     // Check if user already has an active session
     const activeSession = await Session.findOne({
@@ -53,7 +53,6 @@ router.post('/start', protect, async (req, res) => {
     const session = await Session.create({
       userId: req.user._id,
       taskId: taskId || null,
-      source,
       startTime: new Date(),
       status: 'ONGOING'
     });

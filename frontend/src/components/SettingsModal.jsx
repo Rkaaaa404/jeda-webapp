@@ -8,7 +8,6 @@ const SettingsModal = ({ isOpen, onClose, activeSession }) => {
   const [settings, setSettings] = useState({
     workDuration: 25,
     shortBreak: 5,
-    longBreak: 15,
     minSessionDuration: 5
   });
   const [loading, setLoading] = useState(false);
@@ -98,7 +97,7 @@ const SettingsModal = ({ isOpen, onClose, activeSession }) => {
             {/* Short Break */}
             <div>
               <label className="block text-slate-300 mb-2 text-sm font-medium">
-                Short Break (minutes)
+                Break Duration (minutes)
               </label>
               <input
                 type="number"
@@ -106,22 +105,6 @@ const SettingsModal = ({ isOpen, onClose, activeSession }) => {
                 max="60"
                 value={settings.shortBreak}
                 onChange={(e) => setSettings({ ...settings, shortBreak: parseInt(e.target.value) })}
-                disabled={activeSession}
-                className="w-full bg-slate-700 border border-slate-600 text-white px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 disabled:opacity-50 disabled:cursor-not-allowed"
-              />
-            </div>
-
-            {/* Long Break */}
-            <div>
-              <label className="block text-slate-300 mb-2 text-sm font-medium">
-                Long Break (minutes)
-              </label>
-              <input
-                type="number"
-                min="1"
-                max="120"
-                value={settings.longBreak}
-                onChange={(e) => setSettings({ ...settings, longBreak: parseInt(e.target.value) })}
                 disabled={activeSession}
                 className="w-full bg-slate-700 border border-slate-600 text-white px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 disabled:opacity-50 disabled:cursor-not-allowed"
               />

@@ -49,27 +49,27 @@ const TaskItem = ({ task, onSelect, onComplete, onDelete, onEdit, isSelected }) 
             <CheckCircle size={20} />
           </button>
 
-          {/* Edit button: visible but disabled unless TODO */}
+          {/* Edit button: enabled for TODO and DONE, disabled for IN_PROGRESS */}
           <button
             onClick={(e) => {
               e.stopPropagation();
-              if (task.status === 'TODO') onEdit(task);
+              if (task.status !== 'IN_PROGRESS') onEdit(task);
             }}
-            className={`transition-colors ${task.status === 'TODO' ? 'text-blue-500 hover:text-blue-400' : 'text-slate-500 cursor-not-allowed'}`}
-            title={task.status === 'TODO' ? 'Edit Task' : 'Cannot edit while in progress or done'}
-            disabled={task.status !== 'TODO'}
+            className={`transition-colors ${task.status !== 'IN_PROGRESS' ? 'text-blue-500 hover:text-blue-400' : 'text-slate-500 cursor-not-allowed'}`}
+            title={task.status !== 'IN_PROGRESS' ? 'Edit Task' : 'Cannot edit while in progress'}
+            disabled={task.status === 'IN_PROGRESS'}
           >
             <Edit2 size={18} />
           </button>
 
-          {/* Delete button: visible but disabled while IN_PROGRESS */}
+          {/* Delete button: only enabled for TODO */}
           <button
             onClick={(e) => {
               e.stopPropagation();
               if (task.status === 'TODO') onDelete(task._id);
             }}
             className={`transition-colors ${task.status === 'TODO' ? 'text-red-500 hover:text-red-400' : 'text-slate-500 cursor-not-allowed'}`}
-            title={task.status === 'TODO' ? 'Delete Task' : 'Cannot delete while in progress or done'}
+            title={task.status === 'TODO' ? 'Delete Task' : 'Cannot delete task'}
             disabled={task.status !== 'TODO'}
           >
             <Trash2 size={18} />

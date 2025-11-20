@@ -22,8 +22,6 @@ const Dashboard = ({ setActiveSession: setAppActiveSession, activeSession: appAc
   const [editTitle, setEditTitle] = useState('');
   const [editSessions, setEditSessions] = useState(1);
   const [onBreak, setOnBreak] = useState(false);
-  const [breakType, setBreakType] = useState('short'); // 'short' or 'long'
-  const [completedPomodoros, setCompletedPomodoros] = useState(0);
 
   useEffect(() => {
     loadDashboard();
@@ -157,9 +155,6 @@ const Dashboard = ({ setActiveSession: setAppActiveSession, activeSession: appAc
       await loadDashboard();
       
       // Start break after completing a pomodoro
-      setCompletedPomodoros(prev => prev + 1);
-      const nextBreakType = (completedPomodoros + 1) % 4 === 0 ? 'long' : 'short';
-      setBreakType(nextBreakType);
       setOnBreak(true);
     } catch (error) {
       console.error('Failed to stop session:', error);
@@ -300,6 +295,7 @@ const Dashboard = ({ setActiveSession: setAppActiveSession, activeSession: appAc
                           onSelect={() => {}}
                           onComplete={() => {}}
                           onDelete={() => {}}
+                          onEdit={handleEditTask}
                         />
                       ))}
                     </>
@@ -445,8 +441,12 @@ const Dashboard = ({ setActiveSession: setAppActiveSession, activeSession: appAc
                   max="20"
                   value={editSessions}
                   onChange={(e) => setEditSessions(parseInt(e.target.value))}
-                  className="w-full px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                  disabled={editingTask.status === 'DONE'}
+                  className="w-full px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-emerald-500 disabled:opacity-50 disabled:cursor-not-allowed"
                 />
+                {editingTask.status === 'DONE' && (
+                  <p className="text-xs text-slate-400 mt-1">Cannot edit sessions for completed tasks</p>
+                )}
               </div>
             </div>
 
@@ -459,7 +459,7 @@ const Dashboard = ({ setActiveSession: setAppActiveSession, activeSession: appAc
               </button>
               <button
                 onClick={handleSaveEdit}
-                disabled={!editTitle.trim() || editSessions < 1}
+                disabled={!editTitle.trim() || (editingTask.status !== 'DONE' && editSessions < 1)}
                 className="flex-1 px-4 py-2 bg-emerald-500 hover:bg-emerald-600 text-white rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 Save Changes
@@ -472,8 +472,8 @@ const Dashboard = ({ setActiveSession: setAppActiveSession, activeSession: appAc
       {/* Break Timer */}
       {onBreak && (
         <BreakTimer
-          duration={breakType === 'long' ? (user?.settings?.longBreak || 15) : (user?.settings?.shortBreak || 5)}
-          isLongBreak={breakType === 'long'}
+          duration={user?.settings?.shortBreak || 5}
+          isLongBreak={false}
           onBreakEnd={handleBreakEnd}
           onSkip={handleSkipBreak}
         />
