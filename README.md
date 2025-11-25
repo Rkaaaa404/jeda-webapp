@@ -42,72 +42,47 @@ SLAYER bukan sekadar timer. Ini adalah **RPG Quest Tracker** yang mengubah setia
 
 ---
 
-## 🎯 Siapa yang Cocok Jadi Slayer?
+## 🎯 Siapa yang Cocok Pakai JEDA?
 
-Kalau kamu:
+Kalau kamu termasuk salah satu ini, JEDA buat kamu:
 
-- **Gamer** yang pengen produktif tapi bosan sama to-do list biasa
-- **Mahasiswa** yang butuh motivasi ekstra buat ngerjain tugas
-- **Freelancer** yang suka sistem reward dan progression
-- **Content creator** yang pengen tracking productive time dengan cara yang fun
-- **Siapa aja** yang percaya productivity seharusnya **engaging, not boring**
+- **Mahasiswa** yang sering deadline mepet karena prokrastinasi
+- **Pekerja remote** yang susah fokus karena WFH = Work From Home atau Work From HP?
+- **Freelancer** yang pengen lebih disiplin ngatur waktu
+- **Content creator** yang butuh konsistensi bikin konten
+- **Siapa aja** yang pengen produktif tapi butuh sistem yang "maksa" mereka konsisten
 
-SLAYER adalah game-changer kamu.
+Intinya: kalau kamu pengen lebih dari sekadar timer, kalau kamu butuh **accountability** dan **motivasi jangka panjang**, JEDA adalah solusinya.
 
 ---
 
-## 🔥 Fitur-Fitur Epic
+## 🔥 Yang Bikin JEDA Spesial
 
-### ⚔️ 1. Hero System
-- **4 Hero Classes** dengan unique bonuses
-- **Level Progression** (exponential XP curve - makin tinggi makin challenging!)
-- **XP & Gold** as real currency
-- **Hero Stats Card** yang nunjukin class bonuses dan progress bar
+### 1. Evidence-Based Productivity
+Selesai task? Upload bukti. Simpel, tapi powerful. Kamu punya portfolio visual dari semua yang udah kamu kerjain. Nggak cuma angka, tapi **proof** yang real.
 
-### 🎯 2. Quest System
-- **4 Difficulty Levels**: Easy ⭐ | Medium ⭐⭐ | Hard ⭐⭐⭐ | Epic 👑
-- **Random Monster Types** untuk setiap quest (Goblin, Orc, Dragon, dll)
-- **Quest Status**: TODO → IN_PROGRESS → DONE
-- **Edit/Delete Quest** (edit cuma bisa di TODO, delete bisa TODO/IN_PROGRESS)
+### 2. Streak System yang Adiktif
+Setiap hari upload evidence, streak kamu naik. Streak putus? Mulai dari nol lagi. Sistem ini bikin kamu konsisten bukan karena dipaksa, tapi karena **nggak mau effort kemarin sia-sia**.
 
-### 🐉 3. Battle System
-- **Monster HP Bar** sebagai countdown timer
-- **Real-time Battle** dengan timestamp-based timer (survive tab switching!)
-- **Flee Option** - Kabur dari battle tanpa reward (quest auto-reset ke TODO)
-- **Dynamic Duration** - Kamu tentuin berapa lama mau battle (default 25 min)
+### 3. Leaderboard untuk Kompetisi Sehat
+Liat siapa yang paling konsisten (Top Streaks) dan siapa yang paling banyak kerja (Top Focus Time). Kadang kita butuh sedikit kompetisi untuk jadi versi terbaik diri kita.
 
-### 💰 4. Reward System
-- **XP Formula**: `(Duration in minutes × 2) × Difficulty Multiplier × Class Bonus`
-- **Gold Formula**: `(Duration in minutes × 0.4) × Difficulty Multiplier × Class Bonus`
-- **Difficulty Multipliers**: Easy (1x), Medium (1.5x), Hard (2x), Epic (3x)
-- **Auto Level-Up** dengan instant stats update
-
-### 🛒 5. Shop System
-- **6 Cosmetic Themes**: Default (Free), Dark Forest (100g), Cyberpunk (250g), Blood Moon (500g), Ice Palace (750g), Golden Emperor (1000g)
-- **Purchase & Auto-Equip** theme dengan gold
-- **Inventory System** untuk track owned items
-
-### 📊 6. Streak & Leaderboard
-- **Daily Streak** - Upload evidence setiap hari untuk maintain streak
-- **Longest Streak Record** - Personal best tracking
-- **Top Streaks Leaderboard** - Compete with other slayers
-- **Top Focus Time Leaderboard** - Who battles the most?
+### 4. Dashboard yang Jujur
+Grafik mingguan nggak akan bohong. Kalau kamu bolos, grafiknya turun. Kalau kamu konsisten, grafiknya naik. Transparansi ini yang bikin kamu lebih aware sama produktivitas kamu sendiri.
 
 ---
 
 ## 🌟 Bayangkan Kalau...
 
-- Kamu bangun pagi, login SLAYER, dan liat hero kamu **Level 12 Mage** dengan **2,450 Gold**. Kamu tahu persis effort yang udah kamu invest.
+- Kamu bangun pagi, buka JEDA, dan lihat streak 15 hari. Kamu tahu persis kamu udah produktif 2 minggu berturut-turut. Rasanya kayak punya achievement yang real.
 
-- Kamu create quest "Finish Math Assignment" (Hard difficulty, 2 battles). Monster-nya adalah **Ancient Dragon**. Pas timer jalan, HP bar dragon perlahan turun. Rasanya kayak beneran fighting boss!
+- Pas lagi down dan pengen males-malesan, kamu buka leaderboard dan liat nama kamu di top 3. "Gue udah sampai sini, masa mau nyerah sekarang?"
 
-- Setelah 50 menit battle, kamu **level up** dari 12 ke 13. Notif muncul: *"🎉 LEVEL UP! +250 Max XP, +15% XP Bonus (Mage)"*. Dopamine hit langsung!
+- Akhir semester, kamu punya portfolio visual dari semua task yang udah kamu selesaiin. Bukan cuma nilai di transkrip, tapi **bukti nyata** bahwa kamu beneran kerja keras.
 
-- Kamu buka Shop, liat theme "Blood Moon" (500g). Kamu udah nabung dari quest-quest sebelumnya. Click "Purchase" → theme berubah instant. Satisfying banget!
+- Setiap minggu kamu bisa lihat grafik progres. Minggu ini lebih produktif dari minggu lalu? Great! Minggu ini turun? Saatnya introspeksi dan bangkit lagi.
 
-- Weekend, kamu check leaderboard. Nama kamu di **Top 3 Longest Streak** (18 days). Temen-temen kamu notice. Competitive spirit triggered. *"Gue harus pertahanin ini!"*
-
-SLAYER nggak cuma bikin kamu produktif. SLAYER bikin produktivitas jadi **addiction yang sehat**, bikin kamu **excited** buat ngerjain task, dan yang paling penting: bikin kamu **sadar** bahwa effort kamu punya **real value** dalam bentuk XP, Gold, dan Level.
+JEDA nggak cuma bikin kamu produktif. JEDA bikin kamu **sadar** sama produktivitas kamu, bikin kamu **accountable**, dan yang paling penting: bikin kamu **konsisten** dalam jangka panjang.
 
 ---
 
@@ -194,7 +169,7 @@ Buat file `.env`:
 ```env
 PORT=5000
 MONGODB_URI=mongodb://localhost:27017/jeda
-JWT_SECRET=your-super-secret-slayer-key
+JWT_SECRET=your-super-secret-key-change-this
 NODE_ENV=development
 ```
 
@@ -220,49 +195,44 @@ npm run dev
 
 ---
 
-## 🎮 Gameplay Mechanics Explained
+## 💡 Cara Menggunakan JEDA
 
-### ⚔️ Hero Classes & Bonuses
-| Class | XP Bonus | Gold Bonus | Best For |
-|-------|----------|------------|----------|
-| 🗡️ Warrior | +0% | +15% | Gold farming |
-| 🔮 Mage | +15% | +0% | Fast leveling |
-| 🗡️ Rogue | +5% | +10% | Balanced build |
-| ❤️ Healer | +10% | +5% | Steady progression |
+### Langkah Pertama
+1. Buka `http://localhost:3000`
+2. **Register** → Buat akun baru
+3. **Login** dengan kredensial kamu
 
-### 🎯 Quest Difficulties & Rewards
-| Difficulty | Multiplier | Icon | Monster Examples |
-|------------|------------|------|------------------|
-| Easy | 1x | ⭐ | Goblin, Slime |
-| Medium | 1.5x | ⭐⭐ | Orc, Troll |
-| Hard | 2x | ⭐⭐⭐ | Demon, Wyvern |
-| Epic | 3x | 👑 | Dragon, Titan |
+### Membuat Task
+1. Di Dashboard → Klik tombol **"+ New Task"**
+2. Masukkan judul task (contoh: "Belajar React Hooks")
+3. Set estimasi sesi Pomodoro (default: 1, bisa lebih)
+4. Klik **Add**
 
-### 💰 Reward Formula
-```javascript
-Base XP per minute = 2
-Base Gold per minute = 0.4
+### Menjalankan Sesi Fokus
+1. **Pilih task** yang mau dikerjakan (klik card task → highlight hijau)
+2. Klik **"Start Focus"** → Timer 25 menit dimulai
+3. Fokus ngerjain task tanpa distraksi
+4. Klik **"End Session"** setelah selesai atau waktu habis
+5. Progress task otomatis bertambah
 
-Total XP = (Duration in minutes × 2) × Difficulty Multiplier × (1 + Class XP Bonus)
-Total Gold = (Duration in minutes × 0.4) × Difficulty Multiplier × (1 + Class Gold Bonus)
-```
+### Menyelesaikan Task
+1. Setelah task siap diselesaikan, klik ikon **✓** (hanya muncul jika status IN_PROGRESS dan sesi udah cukup)
+2. Modal upload evidence muncul
+3. Upload foto/screenshot hasil kerja kamu
+4. Klik **"Submit Evidence"**
+5. 🔥 Streak kamu naik! Task ditandai DONE
 
-**Example**: Warrior completes 25-min Hard quest
-- XP: `(25 × 2) × 2 × 1.0 = 100 XP`
-- Gold: `(25 × 0.4) × 2 × 1.15 = 23 Gold`
+### Cek Leaderboard
+1. Klik menu **Leaderboard** di sidebar
+2. Lihat dua tab:
+   - **Top Streaks**: User dengan streak terpanjang (konsistensi)
+   - **Top Focus Time**: User dengan total sesi terbanyak
+3. Filter Focus Time berdasarkan periode: Today / Week / Month / All-Time
 
-### 📈 Level Progression
-```javascript
-Max XP for level N = 100 + (N × 50)
-```
-- Level 1 → 2: 150 XP needed
-- Level 2 → 3: 200 XP needed
-- Level 10 → 11: 600 XP needed
-
-### 🔥 Streak System
-- Upload evidence **daily** untuk maintain streak
-- Streak breaks if you skip a day
-- Leaderboard ranks by **current streak** (konsistensi > one-time effort)
+### Lihat History
+1. Klik menu **History** di sidebar
+2. Semua task yang udah diselesaikan ditampilkan dengan foto evidence
+3. Visual portfolio hasil kerja kamu
 
 ---
 
