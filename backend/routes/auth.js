@@ -17,7 +17,7 @@ const generateToken = (id) => {
 // @access  Public
 router.post('/register', async (req, res) => {
   try {
-    const { username, password } = req.body;
+    const { username, password, heroClass } = req.body;
 
     // Validation
     if (!username || !password) {
@@ -47,10 +47,11 @@ router.post('/register', async (req, res) => {
     const salt = await bcrypt.genSalt(10);
     const hashedPassword = await bcrypt.hash(password, salt);
 
-    // Create user
+    // Create user with hero class
     const user = await User.create({
       username,
-      password: hashedPassword
+      password: hashedPassword,
+      heroClass: heroClass || 'Warrior'
     });
 
     res.status(201).json({
@@ -58,6 +59,11 @@ router.post('/register', async (req, res) => {
       data: {
         id: user._id,
         username: user.username,
+        heroClass: user.heroClass,
+        level: user.level,
+        currentXP: user.currentXP,
+        maxXP: user.maxXP,
+        gold: user.gold,
         stats: user.stats,
         settings: user.settings,
         token: generateToken(user._id)

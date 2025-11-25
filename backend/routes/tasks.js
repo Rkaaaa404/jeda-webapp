@@ -3,6 +3,7 @@ import { protect } from '../middleware/auth.js';
 import Task from '../models/Task.js';
 import User from '../models/User.js';
 import upload from '../config/multer.js';
+import { awardRewards, getRandomMonster } from '../utils/rpgLogic.js';
 
 const router = express.Router();
 
@@ -71,7 +72,7 @@ router.get('/', protect, async (req, res) => {
 // @access  Private
 router.post('/', protect, async (req, res) => {
   try {
-    const { title, estimatedSessions } = req.body;
+    const { title, estimatedSessions, difficulty } = req.body;
 
     if (!title) {
       return res.status(400).json({ 
@@ -80,10 +81,13 @@ router.post('/', protect, async (req, res) => {
       });
     }
 
+    const questDifficulty = difficulty || 'Medium';
     const task = await Task.create({
       userId: req.user._id,
       title,
-      estimatedSessions: estimatedSessions || 1
+      estimatedSessions: estimatedSessions || 1,
+      difficulty: questDifficulty,
+      monsterType: getRandomMonster(questDifficulty)
     });
 
     res.status(201).json({
@@ -138,11 +142,31 @@ router.put('/:id/complete', protect, upload.single('evidence'), async (req, res)
     // Update streak
     const updatedUser = await updateStreak(req.user._id);
 
+    // Calculate total session time for this task
+    const Session = (await import('../models/Session.js')).default;
+    const taskSessions = await Session.find({
+      taskId: task._id,
+      status: 'COMPLETED'
+    });
+    const totalSessionMinutes = taskSessions.reduce((sum, s) => sum + (s.duration || 0), 0);
+
+    // Award RPG Rewards (XP & Gold) based on total session time
+    const rewardResult = await awardRewards(updatedUser, totalSessionMinutes, task.difficulty);
+
     res.json({
       success: true,
+      message: `Quest Completed! You defeated the ${task.monsterType}!`,
       data: {
         task,
-        stats: updatedUser.stats
+        stats: updatedUser.stats,
+        rpgRewards: {
+          xpGained: rewardResult.rewards.xp,
+          goldGained: rewardResult.rewards.gold,
+          leveledUp: rewardResult.leveledUp,
+          levelsGained: rewardResult.levelsGained,
+          newLevel: rewardResult.newLevel,
+          currentStats: rewardResult.currentStats
+        }
       }
     });
   } catch (error) {

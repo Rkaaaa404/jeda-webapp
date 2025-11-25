@@ -1,9 +1,14 @@
 import { useState, useEffect } from 'react';
 import { Coffee, Play } from 'lucide-react';
 
-const BreakTimer = ({ duration, onBreakEnd, onSkip, isLongBreak }) => {
+const BreakTimer = ({ duration = 5, onBreakEnd, onSkip, isLongBreak }) => {
   const [timeRemaining, setTimeRemaining] = useState(duration * 60);
   const [isRunning, setIsRunning] = useState(true);
+
+  useEffect(() => {
+    // Reset timer if duration changes
+    setTimeRemaining(duration * 60);
+  }, [duration]);
 
   useEffect(() => {
     if (!isRunning) return;

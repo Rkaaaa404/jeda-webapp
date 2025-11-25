@@ -47,6 +47,7 @@ export const taskAPI = {
 export const sessionAPI = {
   startSession: (data) => api.post('/sessions/start', data),
   stopSession: () => api.post('/sessions/stop'),
+  deleteSession: (sessionId) => api.delete(`/sessions/${sessionId}`),
   getActiveSession: () => api.get('/sessions/active'),
   getSessionHistory: (params) => api.get('/sessions', { params })
 };
@@ -66,6 +67,14 @@ export const dashboardAPI = {
 export const settingsAPI = {
   getSettings: () => api.get('/settings'),
   updateSettings: (data) => api.put('/settings', data)
+};
+
+// Shop API
+export const shopAPI = {
+  getItems: () => api.get('/shop/items'),
+  getInventory: () => api.get('/shop/inventory'),
+  purchaseItem: (itemId) => api.post(`/shop/purchase/${itemId}`),
+  equipItem: (itemId) => api.put(`/shop/equip/${itemId}`)
 };
 
 export default api;

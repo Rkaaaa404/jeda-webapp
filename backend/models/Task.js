@@ -17,6 +17,17 @@ const TaskSchema = new mongoose.Schema({
     default: 'TODO' 
   },
   
+  // RPG Quest System
+  difficulty: {
+    type: String,
+    enum: ['Easy', 'Medium', 'Hard', 'Epic'],
+    default: 'Medium'
+  },
+  monsterType: {
+    type: String,
+    default: 'Goblin'
+  },
+  
   // Planning vs Actual
   estimatedSessions: { 
     type: Number, 

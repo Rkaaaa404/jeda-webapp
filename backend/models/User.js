@@ -12,6 +12,37 @@ const UserSchema = new mongoose.Schema({
     type: String, 
     required: true 
   },
+  // RPG Hero System
+  heroClass: {
+    type: String,
+    enum: ['Mage', 'Warrior', 'Rogue', 'Healer'],
+    default: 'Warrior'
+  },
+  level: {
+    type: Number,
+    default: 1
+  },
+  currentXP: {
+    type: Number,
+    default: 0
+  },
+  maxXP: {
+    type: Number,
+    default: 100
+  },
+  gold: {
+    type: Number,
+    default: 0
+  },
+  inventory: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Item'
+  }],
+  equippedTheme: {
+    type: String,
+    default: 'default'
+  },
+  // Legacy Stats (Keep for streak system)
   stats: {
     currentStreak: { 
       type: Number, 

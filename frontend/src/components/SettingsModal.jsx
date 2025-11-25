@@ -160,7 +160,7 @@ const SettingsModal = ({ isOpen, onClose, activeSession }) => {
           <button
             onClick={handleSave}
             disabled={saving || loading || activeSession}
-            className="flex-1 px-4 py-2 bg-emerald-500 hover:bg-emerald-600 disabled:bg-slate-700 disabled:cursor-not-allowed text-white rounded-lg font-semibold transition-colors flex items-center justify-center gap-2"
+            className="flex-1 px-4 py-2 bg-purple-600 hover:bg-purple-700 disabled:bg-slate-700 disabled:cursor-not-allowed text-white rounded-lg font-semibold transition-colors flex items-center justify-center gap-2"
           >
             <Save size={18} />
             {saving ? 'Saving...' : 'Save'}

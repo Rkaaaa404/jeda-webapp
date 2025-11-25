@@ -26,8 +26,11 @@ const Sidebar = ({ activeSession }) => {
     <>
       {/* Logo */}
       <div className="p-6 border-b border-slate-800">
-        <h1 className="font-display text-3xl font-bold text-emerald-500">jeda.</h1>
-        <p className="text-xs text-slate-400 mt-1">Productivity Ecosystem</p>
+        <div className="flex items-center gap-2">
+          <span className="text-3xl">⚔️</span>
+          <h1 className="font-display text-3xl font-bold bg-gradient-to-r from-red-500 to-purple-500 bg-clip-text text-transparent">SLAYER</h1>
+        </div>
+        <p className="text-xs text-slate-400 mt-1">Quest. Battle. Conquer.</p>
       </div>
 
       {/* Navigation */}
@@ -43,7 +46,7 @@ const Sidebar = ({ activeSession }) => {
                   onClick={() => setIsMobileOpen(false)}
                   className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-colors ${
                     isActive
-                      ? 'bg-emerald-500 text-white'
+                      ? 'bg-gradient-to-r from-red-600 to-purple-600 text-white'
                       : 'text-slate-400 hover:bg-slate-800 hover:text-white'
                   }`}
                 >

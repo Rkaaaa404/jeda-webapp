@@ -49,32 +49,37 @@ const Leaderboard = () => {
             onClick={() => setActiveTab('streak')}
             className={`flex-1 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2 ${
               activeTab === 'streak'
-                ? 'bg-emerald-500 text-white'
+                ? 'bg-gradient-to-r from-red-600 to-purple-600 text-white'
                 : 'bg-slate-800 text-slate-400 hover:bg-slate-700'
             }`}
           >
             <Trophy size={20} />
-            Top Streaks
+            Top Slayers
           </button>
           <button
             onClick={() => setActiveTab('sessions')}
             className={`flex-1 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2 ${
               activeTab === 'sessions'
-                ? 'bg-emerald-500 text-white'
+                ? 'bg-gradient-to-r from-red-600 to-purple-600 text-white'
                 : 'bg-slate-800 text-slate-400 hover:bg-slate-700'
             }`}
           >
             <Zap size={20} />
-            Top Focus Time
+            Top Warriors
           </button>
         </div>
 
         {/* Description */}
-        <p className="text-center text-sm text-slate-400 mb-6">
-          {activeTab === 'streak' 
-            ? '📅 Longest streak of all time - your record consecutive days achievement'
-            : '⏱️ Ranked by total focus time - quality matters more than quantity'}
-        </p>
+        <div className="text-center text-sm text-slate-400 mb-6">
+          {activeTab === 'streak' ? (
+            <div>
+              <p className="mb-2">🏆 <strong>Longest Victory Streak</strong> - Your all-time record!</p>
+              <p className="text-xs text-slate-500">Complete and upload evidence for quests on consecutive days to build your streak.</p>
+            </div>
+          ) : (
+            <p>⏱️ Ranked by total battle time - Every second of focus counts!</p>
+          )}
+        </div>
 
         {/* Time Range Filter (Sessions only) */}
         {activeTab === 'sessions' && (
@@ -85,7 +90,7 @@ const Leaderboard = () => {
                 onClick={() => setTimeRange(range)}
                 className={`px-4 py-2 rounded-lg font-medium transition-colors capitalize ${
                   timeRange === range
-                    ? 'bg-emerald-500 text-white'
+                    ? 'bg-gradient-to-r from-red-600 to-purple-600 text-white'
                     : 'bg-slate-800 text-slate-400 hover:bg-slate-700'
                 }`}
               >

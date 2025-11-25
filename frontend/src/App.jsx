@@ -7,6 +7,7 @@ import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import Leaderboard from './pages/Leaderboard';
 import History from './pages/History';
+import Shop from './pages/Shop';
 
 const AppRoutes = () => {
   const { user } = useAuth();
@@ -45,6 +46,14 @@ const AppRoutes = () => {
             <Layout activeSession={activeSession}>
               <History />
             </Layout>
+          </PrivateRoute>
+        }
+      />
+      <Route
+        path="/shop"
+        element={
+          <PrivateRoute>
+            <Shop />
           </PrivateRoute>
         }
       />

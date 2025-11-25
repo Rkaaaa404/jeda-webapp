@@ -218,4 +218,52 @@ router.get('/', protect, async (req, res) => {
   }
 });
 
+// @route   DELETE /api/sessions/:id
+// @desc    Delete/abandon session (flee from battle)
+// @access  Private
+router.delete('/:id', protect, async (req, res) => {
+  try {
+    const session = await Session.findById(req.params.id);
+
+    if (!session) {
+      return res.status(404).json({
+        success: false,
+        message: 'Session not found'
+      });
+    }
+
+    // Verify session belongs to user
+    if (session.userId.toString() !== req.user._id.toString()) {
+      return res.status(403).json({
+        success: false,
+        message: 'Not authorized'
+      });
+    }
+
+    // If session is linked to a task, check if we should reset the task
+    if (session.taskId) {
+      const task = await Task.findById(session.taskId);
+      if (task && task.completedSessions === 0) {
+        // Reset quest to TODO if fleeing with no completed sessions
+        task.status = 'TODO';
+        await task.save();
+      }
+    }
+
+    // Delete the session (no rewards for fleeing)
+    await session.deleteOne();
+
+    res.json({
+      success: true,
+      message: 'Session abandoned (fled from battle)'
+    });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({
+      success: false,
+      message: 'Server error'
+    });
+  }
+});
+
 export default router;

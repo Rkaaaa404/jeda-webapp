@@ -33,6 +33,7 @@ import sessionRoutes from './routes/sessions.js';
 import leaderboardRoutes from './routes/leaderboard.js';
 import dashboardRoutes from './routes/dashboard.js';
 import settingsRoutes from './routes/settings.js';
+import shopRoutes from './routes/shop.js';
 
 // Routes
 app.get('/api/health', (req, res) => {
@@ -45,6 +46,7 @@ app.use('/api/sessions', sessionRoutes);
 app.use('/api/leaderboard', leaderboardRoutes);
 app.use('/api/dashboard', dashboardRoutes);
 app.use('/api/settings', settingsRoutes);
+app.use('/api/shop', shopRoutes);
 
 // Error handling middleware
 app.use((err, req, res, next) => {
