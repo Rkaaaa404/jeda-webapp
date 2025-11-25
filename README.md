@@ -1,144 +1,144 @@
 # ⚔️ SLAYER - Gamified Quest Tracker
-### *Slay Your Tasks, Level Up Your Life*
+### *Taklukkan Tugas, Tingkatkan Level Hidup*
 
 ---
 
-## 🎮 The Story Behind SLAYER
+## 🎮 Cerita di Balik SLAYER
 
-Pernah nggak sih kamu merasa produktivitas itu **membosankan**? Timer countdown, to-do list yang endless, dan reward yang nggak terasa nyata? Seolah-olah kamu cuma robot yang ngerjain task tanpa ada sense of achievement yang bikin kamu excited.
+Pernahkah kamu merasa produktivitas itu **membosankan**? Timer countdown, daftar tugas yang tak ada habisnya, dan reward yang tidak terasa nyata? Seolah-olah kita hanya robot yang mengerjakan task tanpa ada rasa pencapaian yang membuat excited.
 
-Apa jadinya kalau **productivity meets RPG gaming**?
+Bagaimana jika **produktivitas bertemu game RPG**?
 
-**SLAYER** lahir dari satu ide sederhana: *"Gimana kalau ngerjain tugas itu kayak main game?"*
+**SLAYER** lahir dari satu ide sederhana: *"Bagaimana kalau mengerjakan tugas itu seperti bermain game?"*
 
-Di dunia RPG, kamu fight monster, dapet XP, naik level, collect gold, beli item keren, dan compete di leaderboard. Kenapa produktivitas nggak bisa seseru itu?
+Di dunia RPG, kita melawan monster, mendapat XP, naik level, mengumpulkan gold, membeli item keren, dan bersaing di leaderboard. Mengapa produktivitas tidak bisa seseru itu?
 
 ---
 
-## 💡 Kenapa SLAYER Beda dari Productivity App Lainnya?
+## 💡 Mengapa SLAYER Berbeda dari Aplikasi Produktivitas Lainnya?
 
 SLAYER bukan sekadar timer. Ini adalah **RPG Quest Tracker** yang mengubah setiap task menjadi **epic battle** melawan monster.
 
 ### 🎯 Konsep Inti:
 
 1. **Pilih Hero Class** - Warrior, Mage, Rogue, atau Healer (masing-masing punya bonus XP/Gold unik!)
-2. **Create Quests** - Setiap task adalah quest dengan difficulty level (Easy, Medium, Hard, Epic)
-3. **Battle Monsters** - Timer berubah jadi Monster HP Bar yang perlahan habis saat kamu fokus
-4. **Earn Rewards** - Dapet XP & Gold berdasarkan durasi battle dan difficulty
-5. **Level Up** - Unlock higher levels, collect gold, compete di leaderboard
-6. **Shop System** - Beli cosmetic themes pakai gold yang kamu earn
+2. **Buat Quest** - Setiap task adalah quest dengan difficulty level (Easy, Medium, Hard, Epic)
+3. **Lawan Monster** - Timer berubah jadi Monster HP Bar yang perlahan habis saat kamu fokus
+4. **Dapatkan Reward** - Terima XP & Gold berdasarkan durasi battle dan difficulty
+5. **Naik Level** - Buka level lebih tinggi, kumpulkan gold, bersaing di leaderboard
+6. **Sistem Shop** - Beli tema kosmetik menggunakan gold yang sudah dikumpulkan
 
-### 🔥 Kenapa Ini Powerful?
+### 🔥 Mengapa Ini Powerful?
 
-- **Intrinsic Motivation** - Kamu nggak cuma "selesai task", tapi **"defeat monster"** dan **"level up hero"**
-- **Real Progress Tracking** - Level, XP bar, gold balance - semuanya visual dan satisfying
-- **Class Bonuses** - Hero class bukan cosmetic doang, ada **real gameplay impact**:
-  - 🗡️ **Warrior**: +15% Gold (cocok buat grinder)
-  - 🔮 **Mage**: +15% XP (fast leveling)
-  - 🗡️ **Rogue**: +10% Gold, +5% XP (balanced)
+- **Motivasi Intrinsik** - Kamu tidak hanya "menyelesaikan task", tapi **"mengalahkan monster"** dan **"naik level hero"**
+- **Pelacakan Progress Nyata** - Level, XP bar, saldo gold - semuanya visual dan memuaskan
+- **Bonus Kelas** - Hero class bukan hanya kosmetik, ada **dampak gameplay nyata**:
+  - 🗡️ **Warrior**: +15% Gold (cocok untuk grinder)
+  - 🔮 **Mage**: +15% XP (leveling cepat)
+  - 🗡️ **Rogue**: +10% Gold, +5% XP (seimbang)
   - ❤️ **Healer**: +5% Gold, +10% XP (support build)
-- **Dynamic Rewards** - Semakin lama kamu battle (work session), semakin besar XP & Gold-nya
-- **Evidence System** - Setelah battle, upload proof of victory untuk claim rewards dan maintain streak
+- **Reward Dinamis** - Semakin lama battle (sesi kerja), semakin besar XP & Gold yang didapat
+- **Sistem Evidence** - Setelah battle, upload bukti kemenangan untuk klaim reward dan jaga streak
 
 ---
 
-## 🎯 Who Should Play SLAYER?
+## 🎯 Siapa yang Cocok Menggunakan SLAYER?
 
-SLAYER is perfect if you:
+SLAYER sempurna jika kamu:
 
-- Are a **gamer** who wants productivity to feel like progression
-- Are a **student** needing consistent momentum on assignments
-- Are a **freelancer/creator** who thrives on visual progress & rewards
-- Love **RPG mechanics** (classes, leveling, loot, streaks)
-- Want accountability without boring to‑do lists
+- Seorang **gamer** yang ingin produktivitas terasa seperti progres game
+- Seorang **mahasiswa** yang butuh momentum konsisten dalam mengerjakan tugas
+- Seorang **freelancer/kreator** yang berkembang dengan progress visual & reward
+- Menyukai **mekanik RPG** (kelas, leveling, loot, streak)
+- Menginginkan akuntabilitas tanpa to-do list yang membosankan
 
-If traditional timers feel soulless, SLAYER turns effort into XP, Gold, Levels, and cosmetic flair.
+Jika timer tradisional terasa hambar, SLAYER mengubah usaha menjadi XP, Gold, Level, dan visual yang menarik.
 
 ---
 
-## 🔥 What Makes SLAYER Addictive
+## 🔥 Apa yang Membuat SLAYER Adiktif
 
-### 1. Quest-Based Workflow
-Every task becomes a quest with monsters, difficulty multipliers, and battle sessions.
+### 1. Alur Kerja Berbasis Quest
+Setiap tugas menjadi quest dengan monster, difficulty multiplier, dan battle session.
 
-### 2. Real Progression & Economy
-You earn XP & Gold per battle. Level up faster with strategic class choice. Spend gold in the shop.
+### 2. Progres & Ekonomi Nyata
+Kamu mendapatkan XP & Gold per battle. Naik level lebih cepat dengan pilihan kelas strategis. Belanjakan gold di shop.
 
-### 3. Evidence = Integrity
-Claiming victory requires uploading proof. No fake grinding—only real completed work counts.
+### 3. Evidence = Integritas
+Klaim kemenangan memerlukan upload bukti. Tidak ada grinding palsu—hanya pekerjaan nyata yang dihitung.
 
-### 4. Fair & Balanced Timer Rules
-- Work + Break combined must be ≥ 5 minutes
-- Break cannot exceed Work duration
-- Minimum battle completion threshold (minSessionDuration) prevents spam
+### 4. Aturan Timer yang Adil & Seimbang
+- Work + Break gabungan harus ≥ 5 menit
+- Break tidak boleh melebihi durasi Work
+- Ambang batas minimum penyelesaian battle (minSessionDuration) mencegah spam
 
-### 5. Streak & Leaderboards
-Consistency (daily evidence) fuels streak fire 🔥; skill (efficient battles) drives XP gain.
+### 5. Streak & Leaderboard
+Konsistensi (evidence harian) memicu streak fire 🔥; keahlian (battle efisien) mendorong perolehan XP.
 
 ### 6. Zero Passive Waiting
-Timer is a monster HP bar—visual tension drives focus.
+Timer adalah HP bar monster—ketegangan visual mendorong fokus.
 
 ---
 
-## 🌟 Imagine This
+## 🌟 Bayangkan Ini
 
-- You open the dashboard: Level 9 Rogue, 1,240 Gold, streak 11 days.
-- You defeat a Hard quest and instantly level up—XP bar surges, loot pops.
-- You unlock a new theme and equip it; dashboard transforms visually.
-- You see your name climbing the streak leaderboard—dopamine + discipline loop engaged.
+- Kamu membuka dashboard: Level 9 Rogue, 1.240 Gold, streak 11 hari.
+- Kamu mengalahkan quest Hard dan langsung naik level—XP bar melonjak, loot muncul.
+- Kamu membuka tema baru dan melengkapinya; dashboard berubah secara visual.
+- Kamu melihat namamu naik di streak leaderboard—loop dopamin + disiplin aktif.
 
-SLAYER doesn’t just track time—it weaponizes it.
+SLAYER tidak hanya melacak waktu—tetapi menjadikannya senjata.
 
 ---
 
-## 🚀 How to Play SLAYER
+## 🚀 Cara Bermain SLAYER
 
-### 1️⃣ **Create Your Hero**
+### 1️⃣ **Buat Hero Kamu**
 - Register → Pilih **Hero Class** (Warrior/Mage/Rogue/Healer)
-- Setiap class punya **unique bonuses** yang affect XP & Gold earnings
-- Login dan liat **Hero Stats Card** kamu di Dashboard
+- Setiap class punya **unique bonuses** yang mempengaruhi perolehan XP & Gold
+- Login dan lihat **Hero Stats Card** kamu di Dashboard
 
-### 2️⃣ **Accept Quests**
-- Click **"+ Create Quest"**
-- Isi quest details:
-  - **Title** (e.g., "Finish React Assignment")
-  - **Difficulty** (Easy/Medium/Hard/Epic) → affects XP/Gold multiplier
-  - **Estimated Battles** (berapa sesi mau ngerjain)
-- **Random Monster** assigned automatically berdasarkan difficulty
+### 2️⃣ **Terima Quest**
+- Klik **"+ Create Quest"**
+- Isi detail quest:
+  - **Title** (contoh: "Selesaikan Tugas React")
+  - **Difficulty** (Easy/Medium/Hard/Epic) → mempengaruhi multiplier XP/Gold
+  - **Estimated Battles** (berapa sesi yang dibutuhkan)
+- **Monster Acak** ditugaskan otomatis berdasarkan difficulty
 
-### 3️⃣ **Battle Monsters**
-- Click **"Begin Battle"** pada quest
-- Timer starts → **Monster HP Bar** perlahan turun
-- Fokus ngerjain task tanpa distraksi
-- Options:
-  - **Complete Battle** → Click "End Session" kalau udah selesai
-  - **Flee** → Kabur dari battle (NO rewards, quest reset ke TODO)
+### 3️⃣ **Lawan Monster**
+- Klik **"Begin Battle"** pada quest
+- Timer mulai → **Monster HP Bar** perlahan berkurang
+- Fokus mengerjakan task tanpa distraksi
+- Opsi:
+  - **Complete Battle** → Klik "End Session" jika sudah selesai
+  - **Flee** → Kabur dari battle (TIDAK ada reward, quest reset ke TODO)
 
-### 4️⃣ **Claim Victory & Loot**
-- Setelah complete minimal 1 battle, click **"Claim Victory"**
+### 4️⃣ **Klaim Kemenangan & Loot**
+- Setelah menyelesaikan minimal 1 battle, klik **"Claim Victory"**
 - Upload **Evidence** (screenshot/foto hasil kerja)
-- Dapet **XP & Gold** based on:
-  - Total battle duration
-  - Quest difficulty
-  - Hero class bonuses
-- **Auto Level-Up** kalau XP cukup!
+- Dapatkan **XP & Gold** berdasarkan:
+  - Total durasi battle
+  - Difficulty quest
+  - Bonus hero class
+- **Auto Level-Up** jika XP cukup!
 
-### 5️⃣ **Spend Your Gold**
-- Buka **Shop** page
-- Beli **Cosmetic Themes** pakai gold:
+### 5️⃣ **Belanjakan Gold Kamu**
+- Buka halaman **Shop**
+- Beli **Tema Kosmetik** dengan gold:
   - Dark Forest (100g)
   - Cyberpunk (250g)
   - Blood Moon (500g)
   - Ice Palace (750g)
   - Golden Emperor (1000g)
-- Theme langsung equipped setelah purchase
+- Tema langsung terpasang setelah pembelian
 
-### 6️⃣ **Compete & Dominate**
-- Check **Leaderboard**:
-  - **Top Streaks** → Siapa paling konsisten upload evidence
+### 6️⃣ **Berkompetisi & Mendominasi**
+- Cek **Leaderboard**:
+  - **Top Streaks** → Siapa yang paling konsisten upload evidence
   - **Top Levels** → Siapa hero tertinggi
-- Maintain **daily streak** dengan upload evidence setiap hari
-- Climb the ranks!
+- Jaga **daily streak** dengan upload evidence setiap hari
+- Naik peringkat!
 
 ---
 
@@ -147,15 +147,15 @@ SLAYER doesn’t just track time—it weaponizes it.
 **Backend**: Node.js, Express.js, MongoDB, Mongoose, JWT, Multer  
 **Frontend**: React 18, Vite, Tailwind CSS, React Router, Axios, Lucide Icons  
 **Design**: RPG Dark Theme (Slate-950 + Red-600/Purple-600 gradients)  
-**Game Logic**: Custom XP/Level progression, Dynamic reward calculations, Class bonus system
+**Game Logic**: Progres XP/Level kustom, Kalkulasi reward dinamis, Sistem bonus kelas
 
 ---
 
-## 📦 Setup & Installation
+## 📦 Setup & Instalasi
 
-### Prerequisites
+### Prasyarat
 - Node.js (v18+)
-- MongoDB (local or MongoDB Atlas)
+- MongoDB (lokal atau MongoDB Atlas)
 - Git
 
 ### 1. Clone Repository
@@ -178,16 +178,16 @@ JWT_SECRET=your-super-secret-key-change-this
 NODE_ENV=development
 ```
 
-Seed shop items:
+Seed item shop:
 ```bash
 node seeders/seedShop.js
 ```
-*Creates 6 cosmetic themes in database*
+*Membuat 6 tema kosmetik di database*
 
 Jalankan server:
 ```bash
 npm run dev
-# Server running on http://localhost:5000
+# Server berjalan di http://localhost:5000
 ```
 
 ### 3. Setup Frontend
@@ -195,37 +195,37 @@ npm run dev
 cd ../frontend
 npm install
 npm run dev
-# App running on http://localhost:3001
+# Aplikasi berjalan di http://localhost:3001
 ```
 
 ---
 
-## 💡 Cara Menggunakan JEDA
+## 💡 Cara Menggunakan SLAYER
 
 ### Langkah Pertama
-1. Buka `http://localhost:3000`
-2. **Register** → Buat akun baru
-3. **Login** dengan kredensial kamu
+1. Buka `http://localhost:3001`
+2. **Register** → Buat akun baru dan pilih hero class
+3. **Login** dengan kredensial yang sudah dibuat
 
-### Membuat Task
-1. Di Dashboard → Klik tombol **"+ New Task"**
-2. Masukkan judul task (contoh: "Belajar React Hooks")
-3. Set estimasi sesi Pomodoro (default: 1, bisa lebih)
-4. Klik **Add**
+### Membuat Quest
+1. Di Dashboard → Klik tombol **"+ New Quest"**
+2. Masukkan judul quest (contoh: "Belajar React Hooks")
+3. Set difficulty dan estimasi sesi battle
+4. Klik **Create Quest**
 
-### Menjalankan Sesi Fokus
-1. **Pilih task** yang mau dikerjakan (klik card task → highlight hijau)
-2. Klik **"Start Focus"** → Timer 25 menit dimulai
-3. Fokus ngerjain task tanpa distraksi
-4. Klik **"End Session"** setelah selesai atau waktu habis
-5. Progress task otomatis bertambah
+### Menjalankan Battle Session
+1. **Pilih quest** yang ingin dikerjakan
+2. Klik **"Begin Battle"** → Timer dimulai dengan HP bar monster
+3. Fokus mengerjakan task tanpa distraksi
+4. Klik **"Complete Battle"** setelah selesai atau waktu habis
+5. Progress quest otomatis bertambah
 
-### Menyelesaikan Task
-1. Setelah task siap diselesaikan, klik ikon **✓** (hanya muncul jika status IN_PROGRESS dan sesi udah cukup)
+### Menyelesaikan Quest
+1. Setelah quest siap diselesaikan, klik **"Claim Victory"**
 2. Modal upload evidence muncul
-3. Upload foto/screenshot hasil kerja kamu
+3. Upload foto/screenshot hasil kerja
 4. Klik **"Submit Evidence"**
-5. 🔥 Streak kamu naik! Task ditandai DONE
+5. 🔥 Streak bertambah! Quest ditandai DONE dengan reward XP & Gold
 
 ### Cek Leaderboard
 1. Klik menu **Leaderboard** di sidebar
@@ -236,8 +236,8 @@ npm run dev
 
 ### Lihat History
 1. Klik menu **History** di sidebar
-2. Semua task yang udah diselesaikan ditampilkan dengan foto evidence
-3. Visual portfolio hasil kerja kamu
+2. Semua quest yang sudah diselesaikan ditampilkan dengan foto evidence
+3. Portfolio visual hasil kerja
 
 ---
 
@@ -245,103 +245,103 @@ npm run dev
 
 ### Authentication
 ```
-POST /api/auth/register   - Create new hero account (with class selection)
+POST /api/auth/register   - Buat akun hero baru (dengan pilihan class)
 POST /api/auth/login      - Login
-GET  /api/auth/me         - Current user data
+GET  /api/auth/me         - Data user saat ini
 ```
 
-### Quests (Tasks)
+### Quest (Task)
 ```
-GET    /api/tasks              - Get all user quests
-POST   /api/tasks              - Create new quest
+GET    /api/tasks              - Ambil semua quest user
+POST   /api/tasks              - Buat quest baru
 PUT    /api/tasks/:id          - Update quest (title, difficulty, estimatedSessions)
-PUT    /api/tasks/:id/complete - Complete quest & claim rewards (upload evidence)
-DELETE /api/tasks/:id          - Delete quest
+PUT    /api/tasks/:id/complete - Selesaikan quest & klaim reward (upload evidence)
+DELETE /api/tasks/:id          - Hapus quest
 ```
 
-### Battle Sessions
+### Battle Session
 ```
-POST   /api/sessions/start   - Start battle session
-POST   /api/sessions/stop    - End battle session
-DELETE /api/sessions/:id     - Flee from battle (no rewards)
-GET    /api/sessions/active  - Get active session
-GET    /api/sessions         - Session history
+POST   /api/sessions/start   - Mulai battle session
+POST   /api/sessions/stop    - Akhiri battle session
+DELETE /api/sessions/:id     - Kabur dari battle (tidak ada reward)
+GET    /api/sessions/active  - Ambil session aktif
+GET    /api/sessions         - Riwayat session
 ```
 
 ### Shop
 ```
-GET  /api/shop/items        - Get all shop items
-GET  /api/shop/inventory    - Get user's owned items
-POST /api/shop/purchase/:id - Purchase item with gold
-PUT  /api/shop/equip/:id    - Equip purchased theme
+GET  /api/shop/items        - Ambil semua item shop
+GET  /api/shop/inventory    - Ambil item milik user
+POST /api/shop/purchase/:id - Beli item dengan gold
+PUT  /api/shop/equip/:id    - Pasang tema yang sudah dibeli
 ```
 
 ### Leaderboard & Dashboard
 ```
-GET /api/leaderboard/streak             - Top slayers by streak
-GET /api/leaderboard/sessions?range=all - Top slayers by total sessions
-GET /api/dashboard                      - Dashboard stats
+GET /api/leaderboard/streak             - Slayer teratas berdasarkan streak
+GET /api/leaderboard/sessions?range=all - Slayer teratas berdasarkan total session
+GET /api/dashboard                      - Statistik dashboard
 ```
 
 ---
 
-## 📂 Project Structure
+## 📂 Struktur Proyek
 
 ```
 jeda-webapp/
 ├── backend/
 │   ├── config/
-│   │   ├── db.js           # MongoDB connection
-│   │   └── multer.js       # File upload config
+│   │   ├── db.js           # Koneksi MongoDB
+│   │   └── multer.js       # Konfigurasi upload file
 │   ├── middleware/
-│   │   └── auth.js         # JWT authentication
+│   │   └── auth.js         # Autentikasi JWT
 │   ├── models/
-│   │   ├── User.js         # User schema (with RPG fields: level, XP, gold, heroClass, inventory)
-│   │   ├── Task.js         # Quest schema (difficulty, monsterType, completedSessions)
-│   │   ├── Session.js      # Battle session schema
-│   │   └── Item.js         # Shop item schema
+│   │   ├── User.js         # Schema user (dengan field RPG: level, XP, gold, heroClass, inventory)
+│   │   ├── Task.js         # Schema quest (difficulty, monsterType, completedSessions)
+│   │   ├── Session.js      # Schema battle session
+│   │   └── Item.js         # Schema item shop
 │   ├── routes/
-│   │   ├── auth.js         # Auth endpoints (with hero class selection)
-│   │   ├── tasks.js        # Quest CRUD + reward system
-│   │   ├── sessions.js     # Battle sessions + flee
-│   │   ├── shop.js         # Shop purchase/equip
-│   │   ├── leaderboard.js  # Rankings
-│   │   ├── dashboard.js    # Dashboard stats
-│   │   └── settings.js     # User settings
+│   │   ├── auth.js         # Endpoint auth (dengan pilihan hero class)
+│   │   ├── tasks.js        # CRUD quest + sistem reward
+│   │   ├── sessions.js     # Battle session + flee
+│   │   ├── shop.js         # Purchase/equip shop
+│   │   ├── leaderboard.js  # Peringkat
+│   │   ├── dashboard.js    # Statistik dashboard
+│   │   └── settings.js     # Pengaturan user
 │   ├── utils/
-│   │   └── rpgLogic.js     # XP/Gold calculations, level progression, class bonuses
+│   │   └── rpgLogic.js     # Kalkulasi XP/Gold, progres level, bonus kelas
 │   ├── seeders/
-│   │   └── seedShop.js     # Seed 6 cosmetic themes
-│   ├── public/uploads/     # Evidence images storage
-│   ├── server.js           # Express entry point
+│   │   └── seedShop.js     # Seed 6 tema kosmetik
+│   ├── public/uploads/     # Penyimpanan gambar evidence
+│   ├── server.js           # Entry point Express
 │   └── package.json
 │
 ├── frontend/
 │   ├── src/
 │   │   ├── components/
-│   │   │   ├── Layout.jsx          # Sidebar navigation (SLAYER branding)
+│   │   │   ├── Layout.jsx          # Navigasi sidebar (branding SLAYER)
 │   │   │   ├── PrivateRoute.jsx    # Route guard
-│   │   │   ├── HeroCard.jsx        # Display hero stats (level, XP bar, gold, class bonuses)
-│   │   │   ├── QuestItem.jsx       # Quest card with difficulty badges, edit/delete
-│   │   │   ├── BattleTimer.jsx     # Monster HP bar timer
-│   │   │   ├── BreakTimer.jsx      # Break countdown
-│   │   │   ├── EvidenceModal.jsx   # Upload evidence modal
-│   │   │   ├── SettingsModal.jsx   # Settings modal (RPG purple theme)
-│   │   │   └── Podium.jsx          # Leaderboard podium
+│   │   │   ├── HeroCard.jsx        # Tampilan stats hero (level, XP bar, gold, bonus kelas)
+│   │   │   ├── QuestItem.jsx       # Card quest dengan badge difficulty, edit/delete
+│   │   │   ├── BattleTimer.jsx     # Timer HP bar monster
+│   │   │   ├── BreakTimer.jsx      # Countdown break
+│   │   │   ├── EvidenceModal.jsx   # Modal upload evidence
+│   │   │   ├── SettingsModal.jsx   # Modal pengaturan (tema purple RPG)
+│   │   │   └── Podium.jsx          # Podium leaderboard
 │   │   ├── context/
-│   │   │   └── AuthContext.jsx     # Auth state management
+│   │   │   └── AuthContext.jsx     # Manajemen state auth
 │   │   ├── pages/
-│   │   │   ├── Login.jsx           # Login/Register with hero class selection
-│   │   │   ├── Dashboard.jsx       # Main quest dashboard (RPG theme)
-│   │   │   ├── Shop.jsx            # Cosmetic theme shop
-│   │   │   ├── Leaderboard.jsx     # Rankings (streaks & levels)
-│   │   │   └── History.jsx         # Completed quests history
+│   │   │   ├── Login.jsx           # Login/Register dengan pilihan hero class
+│   │   │   ├── Dashboard.jsx       # Dashboard quest utama (tema RPG)
+│   │   │   ├── Shop.jsx            # Shop tema kosmetik
+│   │   │   ├── Leaderboard.jsx     # Peringkat (streak & level)
+│   │   │   └── History.jsx         # Riwayat quest selesai
 │   │   ├── utils/
-│   │   │   └── api.js              # Axios API calls
-│   │   ├── App.jsx                 # Router setup
-│   │   ├── main.jsx                # React entry point
+│   │   │   └── api.js              # API call Axios
+│   │   ├── App.jsx                 # Setup router
+│   │   ├── main.jsx                # Entry point React
 │   │   └── index.css               # Tailwind CSS
-│   ├── index.html                  # HTML with SLAYER title
+│   ├── index.html                  # HTML dengan title SLAYER
 │   ├── vite.config.js
 │   └── tailwind.config.js
 │
@@ -350,11 +350,11 @@ jeda-webapp/
 
 ---
 
-## 🧠 Core Game Logic
+## 🧠 Logika Game Inti
 
-### XP & Level Calculation
+### Kalkulasi XP & Level
 ```javascript
-// From backend/utils/rpgLogic.js
+// Dari backend/utils/rpgLogic.js
 
 function calculateLevel(currentXP) {
   let level = 1;
@@ -371,18 +371,18 @@ function calculateLevel(currentXP) {
 }
 ```
 
-### Reward Distribution
+### Distribusi Reward
 ```javascript
 function calculateRewards(sessionDuration, difficulty, heroClass) {
-  // Base rewards per minute
+  // Reward dasar per menit
   let baseXP = sessionDuration * 2;
   let baseGold = sessionDuration * 0.4;
   
-  // Difficulty multipliers
+  // Multiplier difficulty
   const multipliers = { Easy: 1, Medium: 1.5, Hard: 2, Epic: 3 };
   const diffMultiplier = multipliers[difficulty];
   
-  // Class bonuses
+  // Bonus kelas
   const bonuses = {
     Warrior: { xp: 0, gold: 0.15 },
     Mage: { xp: 0.15, gold: 0 },
@@ -397,109 +397,147 @@ function calculateRewards(sessionDuration, difficulty, heroClass) {
 }
 ```
 
-### Streak Logic
+### Logika Streak
 ```javascript
-// When user uploads evidence:
+// Ketika user upload evidence:
 
-IF never uploaded before:
+JIKA belum pernah upload:
   currentStreak = 1
   
-IF already uploaded TODAY:
-  no change (already counted)
+JIKA sudah upload HARI INI:
+  tidak ada perubahan (sudah dihitung)
   
-IF last upload was YESTERDAY:
-  currentStreak += 1  // Continue streak
+JIKA upload terakhir KEMARIN:
+  currentStreak += 1  // Lanjutkan streak
   
-IF last upload was > 1 day ago:
-  currentStreak = 1   // Streak broken, reset
+JIKA upload terakhir > 1 hari lalu:
+  currentStreak = 1   // Streak putus, reset
   
-// Update longest streak if current exceeds record
+// Update longest streak jika current melebihi rekor
 longestStreak = max(currentStreak, longestStreak)
 ```
 
-### Quest Lifecycle
-1. User creates quest → Status: `TODO`, assign random monster
-2. Click "Begin Battle" → Status: `IN_PROGRESS`, create session
-3. Timer runs → Monster HP decreases
-4. Options:
-   - **Complete Battle** → Session saved, `completedSessions++`
-   - **Flee** → Session deleted, quest reset to `TODO` (if 0 completed sessions)
-5. Click "Claim Victory" → Upload evidence → Calculate total battle time → Award XP/Gold → Check level up
+### Siklus Hidup Quest
+1. User membuat quest → Status: `TODO`, assign monster acak
+2. Klik "Begin Battle" → Status: `IN_PROGRESS`, buat session
+3. Timer berjalan → HP Monster berkurang
+4. Opsi:
+   - **Complete Battle** → Session tersimpan, `completedSessions++`
+   - **Flee** → Session dihapus, quest reset ke `TODO` (jika 0 completed sessions)
+5. Klik "Claim Victory" → Upload evidence → Hitung total waktu battle → Beri XP/Gold → Cek level up
 6. Status: `DONE`
 
 ---
 
-## 🎨 UI/UX Highlights
+## 🎨 Highlight UI/UX
 
-- **RPG Dark Theme**: Slate-950 background with Red-600/Purple-600 gradients
-- **Monster HP Bar**: Visual timer that depletes as you work
-- **XP Progress Bar**: Animated gradient bar showing level progress
-- **Class Bonus Display**: Shows real gameplay effects of each class
-- **Difficulty Badges**: Color-coded quest difficulties (Green/Yellow/Orange/Purple)
-- **Gold Currency**: Displayed with 💰 emoji, spendable in shop
-- **Theme Preview**: Visual cards showing each cosmetic theme
-- **Podium System**: Trophy 🏆 for top 3 leaderboard positions
-- **Streak Fire Icon**: 🔥 for active streaks
-- **Responsive Design**: Mobile-friendly sidebar and cards
-
----
-
-## 🔐 Security
-
-- **JWT Authentication**: Token-based with 30-day expiry
-- **bcryptjs Password Hashing**: 10 salt rounds
-- **Protected Routes**: Middleware auth on all private endpoints
-- **File Validation**: Images only, max 5MB
-- **Mongoose Schema Validation**: Input sanitization
-- **Authorization Checks**: Users can only access their own data
+- **Tema RPG Gelap**: Background Slate-950 dengan gradien Red-600/Purple-600
+- **HP Bar Monster**: Timer visual yang berkurang saat bekerja
+- **Progress Bar XP**: Bar gradien animasi menunjukkan progress level
+- **Tampilan Bonus Kelas**: Menunjukkan efek gameplay nyata setiap kelas
+- **Badge Difficulty**: Difficulty quest berkode warna (Hijau/Kuning/Orange/Ungu)
+- **Mata Uang Gold**: Ditampilkan dengan emoji 💰, dapat dibelanjakan di shop
+- **Preview Tema**: Card visual menampilkan setiap tema kosmetik
+- **Sistem Podium**: Trophy 🏆 untuk 3 posisi teratas leaderboard
+- **Ikon Streak Fire**: 🔥 untuk streak aktif
+- **Desain Responsif**: Sidebar dan card ramah mobile
 
 ---
 
-## 🧪 Testing Guide
+## 🔐 Keamanan
 
-### Complete Player Journey
-1. **Register** → Choose hero class (e.g., Mage for fast leveling)
-2. **Login** → See Hero Card with Level 1, 0 XP, 0 Gold
-3. **Create Quest** → "Complete React Tutorial" (Medium difficulty, 2 battles)
-4. **Begin Battle** → Timer starts, Monster HP decreases
-5. **Complete Session** (or flee to test auto-reset)
-6. **Create another session** for same quest
-7. **Claim Victory** → Upload screenshot → See reward notification
-8. **Check Hero Card** → XP increased, maybe leveled up, gold earned
-9. **Visit Shop** → Browse themes, purchase with gold
-10. **Check Leaderboard** → See your ranking
-11. **Test Streak** → Upload evidence daily to maintain streak
+- **Autentikasi JWT**: Token-based dengan masa berlaku 30 hari
+- **Hashing Password bcryptjs**: 10 salt rounds
+- **Route Terlindungi**: Middleware auth pada semua endpoint privat
+- **Validasi File**: Hanya gambar, maksimal 5MB
+- **Validasi Schema Mongoose**: Sanitasi input
+- **Cek Otorisasi**: User hanya dapat mengakses data mereka sendiri
 
-### Example Quests for Testing
-- "Learn Tailwind CSS" (Easy, 1 battle)
-- "Build Authentication System" (Medium, 2 battles)
-- "Implement RPG Game Logic" (Hard, 3 battles)
-- "Deploy Production App" (Epic, 5 battles)
+---
+
+## 🧪 Panduan Testing
+
+### Perjalanan Pemain Lengkap
+1. **Register** → Pilih hero class (contoh: Mage untuk leveling cepat)
+2. **Login** → Lihat Hero Card dengan Level 1, 0 XP, 0 Gold
+3. **Buat Quest** → "Selesaikan Tutorial React" (difficulty Medium, 2 battle)
+4. **Begin Battle** → Timer mulai, HP Monster berkurang
+5. **Complete Session** (atau flee untuk test auto-reset)
+6. **Buat session lain** untuk quest yang sama
+7. **Claim Victory** → Upload screenshot → Lihat notifikasi reward
+8. **Cek Hero Card** → XP bertambah, mungkin naik level, gold didapat
+9. **Kunjungi Shop** → Lihat tema, beli dengan gold
+10. **Cek Leaderboard** → Lihat peringkat
+11. **Test Streak** → Upload evidence setiap hari untuk jaga streak
+
+### Contoh Quest untuk Testing
+- "Belajar Tailwind CSS" (Easy, 1 battle)
+- "Bangun Sistem Authentication" (Medium, 2 battle)
+- "Implementasi Logika Game RPG" (Hard, 3 battle)
+- "Deploy Aplikasi Production" (Epic, 5 battle)
 
 ---
 
 ## 🆘 Troubleshooting
 
-### Backend won't start
-- Ensure MongoDB is running (`mongod` command or MongoDB service)
-- Check `.env` file exists with correct `MONGODB_URI`
-- Verify port 5000 is not being used by another process
+### Backend tidak bisa start
+- Pastikan MongoDB berjalan (perintah `mongod` atau service MongoDB)
+- Cek file `.env` ada dan `MONGODB_URI` benar
+- Verifikasi port 5000 tidak digunakan proses lain
 
-### Frontend can't connect to backend
-- Check backend is running on port 5000
-- Verify `vite.config.js` proxy is set to `http://localhost:5000`
-- Clear browser cache and restart dev server
+### Frontend tidak bisa connect ke backend
+- Cek backend berjalan di port 5000
+- Verifikasi `vite.config.js` proxy diset ke `http://localhost:5000`
+- Hapus cache browser dan restart dev server
 
-### Shop items not showing
-- Run shop seeder: `node seeders/seedShop.js` from backend folder
-- Check MongoDB connection and database name
+### Item shop tidak muncul
+- Jalankan shop seeder: `node seeders/seedShop.js` dari folder backend
+- Cek koneksi MongoDB dan nama database
 
-### Level not updating after quest completion
-- Page auto-reloads after 2 seconds on level-up
-- If stuck, manually refresh page
-- Check browser console for errors
+### Level tidak update setelah selesaikan quest
+- Halaman auto-reload setelah 2 detik saat level-up
+- Jika stuck, refresh manual
+- Cek browser console untuk error
 
-### Timer resets when switching tabs
-- This should be fixed (timestamp-based timer)
-- Clear browser cache if issue persists
-- Check browser console for session errors
+### Timer reset saat pindah tab
+- Ini harusnya sudah diperbaiki (timer berbasis timestamp)
+- Hapus cache browser jika masalah berlanjut
+- Cek browser console untuk error session
+
+### Timer stuck di 00:00 setelah selesai
+- Pastikan durasi work dan break sudah diatur dengan benar di Settings
+- Work + Break minimal 5 menit total
+- Break tidak boleh lebih besar dari Work
+- Refresh halaman setelah ubah settings untuk memastikan context terbaru
+
+---
+
+## 🎯 Fitur Mendatang
+
+- **Guild System**: Bergabung dengan guild untuk bonus kolektif
+- **Daily Quests**: Challenge harian dengan bonus reward
+- **Achievements**: Badge untuk milestone tertentu
+- **Power-ups**: Item consumable untuk boost XP/Gold sementara
+- **PvP Leaderboard**: Kompetisi head-to-head antar player
+- **Seasonal Events**: Event terbatas dengan reward eksklusif
+
+---
+
+## 📄 Lisensi
+
+Proyek ini dibuat untuk tujuan edukasi dan pembelajaran.
+
+---
+
+## 💬 Kontribusi
+
+Kontribusi, issue, dan feature request sangat diterima!  
+Jangan ragu untuk cek [issues page](../../issues).
+
+---
+
+## ✨ Kredit
+
+Dibuat dengan ❤️ oleh tim yang percaya produktivitas seharusnya menyenangkan.
+
+**SLAYER** - Karena setiap task layak menjadi epic quest. ⚔️
