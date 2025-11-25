@@ -49,11 +49,16 @@ router.post('/start', protect, async (req, res) => {
       }
     }
 
-    // Create new session
+    // Fetch user settings for planned duration
+    const user = await User.findById(req.user._id).select('settings.workDuration');
+    const plannedDuration = user?.settings?.workDuration || 25; // minutes
+
+    // Create new session with planned duration
     const session = await Session.create({
       userId: req.user._id,
       taskId: taskId || null,
       startTime: new Date(),
+      duration: plannedDuration, // planned work duration in minutes
       status: 'ONGOING'
     });
 
@@ -97,12 +102,15 @@ router.post('/stop', protect, async (req, res) => {
     // Calculate elapsed time in minutes
     const elapsedMinutes = Math.floor((new Date() - new Date(session.startTime)) / (1000 * 60));
 
-    // Enforce minimum duration
-    if (elapsedMinutes < minDurationMinutes) {
+    // Allow completion at planned duration if it is shorter than minimum
+    const plannedDuration = session.duration || minDurationMinutes;
+    const effectiveMinimum = Math.min(minDurationMinutes, plannedDuration);
+
+    if (elapsedMinutes < effectiveMinimum) {
       return res.status(400).json({
         success: false,
-        message: `Session must be at least ${minDurationMinutes} minutes. Current: ${elapsedMinutes} minutes.`,
-        remainingMinutes: minDurationMinutes - elapsedMinutes
+        message: `Session must reach ${effectiveMinimum} minutes before completion. Current: ${elapsedMinutes} minutes.`,
+        remainingMinutes: effectiveMinimum - elapsedMinutes
       });
     }
 

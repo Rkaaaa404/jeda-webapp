@@ -91,7 +91,7 @@ const BreakTimer = ({ duration = 5, onBreakEnd, onSkip, isLongBreak }) => {
 
         {/* Skip Button */}
         <button
-          onClick={onSkip}
+          onClick={onBreakEnd}
           className="bg-slate-800 hover:bg-slate-700 text-white px-8 py-3 rounded-lg font-semibold transition-all flex items-center gap-2 mx-auto"
         >
           <Play size={20} />

@@ -42,47 +42,52 @@ SLAYER bukan sekadar timer. Ini adalah **RPG Quest Tracker** yang mengubah setia
 
 ---
 
-## 🎯 Siapa yang Cocok Pakai JEDA?
+## 🎯 Who Should Play SLAYER?
 
-Kalau kamu termasuk salah satu ini, JEDA buat kamu:
+SLAYER is perfect if you:
 
-- **Mahasiswa** yang sering deadline mepet karena prokrastinasi
-- **Pekerja remote** yang susah fokus karena WFH = Work From Home atau Work From HP?
-- **Freelancer** yang pengen lebih disiplin ngatur waktu
-- **Content creator** yang butuh konsistensi bikin konten
-- **Siapa aja** yang pengen produktif tapi butuh sistem yang "maksa" mereka konsisten
+- Are a **gamer** who wants productivity to feel like progression
+- Are a **student** needing consistent momentum on assignments
+- Are a **freelancer/creator** who thrives on visual progress & rewards
+- Love **RPG mechanics** (classes, leveling, loot, streaks)
+- Want accountability without boring to‑do lists
 
-Intinya: kalau kamu pengen lebih dari sekadar timer, kalau kamu butuh **accountability** dan **motivasi jangka panjang**, JEDA adalah solusinya.
-
----
-
-## 🔥 Yang Bikin JEDA Spesial
-
-### 1. Evidence-Based Productivity
-Selesai task? Upload bukti. Simpel, tapi powerful. Kamu punya portfolio visual dari semua yang udah kamu kerjain. Nggak cuma angka, tapi **proof** yang real.
-
-### 2. Streak System yang Adiktif
-Setiap hari upload evidence, streak kamu naik. Streak putus? Mulai dari nol lagi. Sistem ini bikin kamu konsisten bukan karena dipaksa, tapi karena **nggak mau effort kemarin sia-sia**.
-
-### 3. Leaderboard untuk Kompetisi Sehat
-Liat siapa yang paling konsisten (Top Streaks) dan siapa yang paling banyak kerja (Top Focus Time). Kadang kita butuh sedikit kompetisi untuk jadi versi terbaik diri kita.
-
-### 4. Dashboard yang Jujur
-Grafik mingguan nggak akan bohong. Kalau kamu bolos, grafiknya turun. Kalau kamu konsisten, grafiknya naik. Transparansi ini yang bikin kamu lebih aware sama produktivitas kamu sendiri.
+If traditional timers feel soulless, SLAYER turns effort into XP, Gold, Levels, and cosmetic flair.
 
 ---
 
-## 🌟 Bayangkan Kalau...
+## 🔥 What Makes SLAYER Addictive
 
-- Kamu bangun pagi, buka JEDA, dan lihat streak 15 hari. Kamu tahu persis kamu udah produktif 2 minggu berturut-turut. Rasanya kayak punya achievement yang real.
+### 1. Quest-Based Workflow
+Every task becomes a quest with monsters, difficulty multipliers, and battle sessions.
 
-- Pas lagi down dan pengen males-malesan, kamu buka leaderboard dan liat nama kamu di top 3. "Gue udah sampai sini, masa mau nyerah sekarang?"
+### 2. Real Progression & Economy
+You earn XP & Gold per battle. Level up faster with strategic class choice. Spend gold in the shop.
 
-- Akhir semester, kamu punya portfolio visual dari semua task yang udah kamu selesaiin. Bukan cuma nilai di transkrip, tapi **bukti nyata** bahwa kamu beneran kerja keras.
+### 3. Evidence = Integrity
+Claiming victory requires uploading proof. No fake grinding—only real completed work counts.
 
-- Setiap minggu kamu bisa lihat grafik progres. Minggu ini lebih produktif dari minggu lalu? Great! Minggu ini turun? Saatnya introspeksi dan bangkit lagi.
+### 4. Fair & Balanced Timer Rules
+- Work + Break combined must be ≥ 5 minutes
+- Break cannot exceed Work duration
+- Minimum battle completion threshold (minSessionDuration) prevents spam
 
-JEDA nggak cuma bikin kamu produktif. JEDA bikin kamu **sadar** sama produktivitas kamu, bikin kamu **accountable**, dan yang paling penting: bikin kamu **konsisten** dalam jangka panjang.
+### 5. Streak & Leaderboards
+Consistency (daily evidence) fuels streak fire 🔥; skill (efficient battles) drives XP gain.
+
+### 6. Zero Passive Waiting
+Timer is a monster HP bar—visual tension drives focus.
+
+---
+
+## 🌟 Imagine This
+
+- You open the dashboard: Level 9 Rogue, 1,240 Gold, streak 11 days.
+- You defeat a Hard quest and instantly level up—XP bar surges, loot pops.
+- You unlock a new theme and equip it; dashboard transforms visually.
+- You see your name climbing the streak leaderboard—dopamine + discipline loop engaged.
+
+SLAYER doesn’t just track time—it weaponizes it.
 
 ---
 
@@ -498,83 +503,3 @@ longestStreak = max(currentStreak, longestStreak)
 - This should be fixed (timestamp-based timer)
 - Clear browser cache if issue persists
 - Check browser console for session errors
-
----
-
-## 🚀 Future Enhancement Ideas
-
-- 🎯 **Skill Trees** - Unlock passive abilities per class
-- ⚔️ **Boss Battles** - Epic quests with special rewards
-- 🎵 **Sound Effects** - Battle music, level-up sounds
-- 👥 **Guilds/Parties** - Team up with friends for shared quests
-- 📈 **Achievement System** - Unlock badges for milestones
-- 🗺️ **Quest Maps** - Visual quest board with categories
-- 💎 **Premium Items** - Legendary themes and effects
-- 📱 **Mobile App** - React Native version
-- 🌐 **Multiplayer Leaderboard** - Real-time rankings
-- 🎁 **Daily Rewards** - Login bonuses and streak rewards
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! If you want to add features or fix bugs:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
-## 👨‍💻 Developer
-
-Built with ❤️ and ⚔️ by a productivity enthusiast who believes work should be as fun as gaming.
-
----
-
-## 🎮 Final Words
-
-**SLAYER** is more than just a productivity app—it's a **mindset shift**. 
-
-We believe that productivity doesn't have to be boring. With the right gamification, the right incentives, and the right accountability system, **you can turn your to-do list into an epic adventure**.
-
-Every quest you complete is a monster you slay.  
-Every level you gain is proof of your growth.  
-Every streak you maintain is a testament to your discipline.
-
-**So what are you waiting for, Slayer?**
-
-Your quests await. Your monsters are waiting. Your legend is about to begin.
-
-⚔️ **Start slaying. Start leveling. Start winning.**
-
----
-
-**May your streaks be long, your battles victorious, and your loot legendary!** 🏆✨
-- Periksa file `.env` ada dan isinya benar
-- Jalankan `npm install` di folder backend
-
-### Frontend tidak konek ke API
-- Pastikan backend berjalan di port 5000
-- Cek konfigurasi proxy di `vite.config.js`
-- Pastikan CORS enabled di `server.js`
-
-### Upload gambar gagal
-- Periksa folder `backend/public/uploads/` ada
-- Pastikan ukuran file < 5MB
-- File harus berupa gambar (jpg/png/gif/webp)
-
-### Streak tidak update
-- Pastikan task sudah IN_PROGRESS sebelum complete
-- Verifikasi gambar terupload dengan sukses
-- Cek log backend untuk error
-
----

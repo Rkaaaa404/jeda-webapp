@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { Play, Pause, SkullIcon, Heart } from 'lucide-react';
 import { sessionAPI } from '../utils/api';
+import { useAuth } from '../context/AuthContext';
 
 const BattleTimer = ({ 
   activeSession, 
@@ -10,6 +11,7 @@ const BattleTimer = ({
   setOnBreak,
   onUpdate
 }) => {
+  const { user } = useAuth();
   const [isPaused, setIsPaused] = useState(false);
   const intervalRef = useRef(null);
   const [timeRemaining, setTimeRemaining] = useState(0);
@@ -17,7 +19,7 @@ const BattleTimer = ({
   // Calculate time remaining based on session start time (always accurate)
   const calculateTimeRemaining = () => {
     if (!activeSession) return 0;
-    const workDuration = activeSession.duration || 25;
+    const workDuration = activeSession.duration || user?.settings?.workDuration || 25;
     const startTime = new Date(activeSession.startTime).getTime();
     const now = Date.now();
     const elapsedSeconds = Math.floor((now - startTime) / 1000);
@@ -60,7 +62,7 @@ const BattleTimer = ({
 
   const handleBattleComplete = async () => {
     try {
-      await sessionAPI.endSession(activeSession._id);
+      await sessionAPI.stopSession();
       setActiveSession(null);
       setAppActiveSession(null);
       alert(`⚔️ ${selectedQuest?.monsterType || 'Monster'} HP Depleted! Battle Session Complete!`);
@@ -68,6 +70,12 @@ const BattleTimer = ({
       onUpdate();
     } catch (error) {
       console.error('Failed to complete battle:', error);
+      const remaining = error?.response?.data?.remainingMinutes;
+      if (remaining) {
+        // Extend timer for required remaining minutes and resume countdown
+        setTimeRemaining(remaining * 60);
+        setIsPaused(false);
+      }
     }
   };
 
@@ -88,7 +96,7 @@ const BattleTimer = ({
     }
   };
 
-  const workDuration = (activeSession?.duration || 25) * 60;
+  const workDuration = (activeSession?.duration || user?.settings?.workDuration || 25) * 60;
   const hpPercentage = (timeRemaining / workDuration) * 100;
   const minutes = Math.floor(timeRemaining / 60);
   const seconds = timeRemaining % 60;
